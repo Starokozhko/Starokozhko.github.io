@@ -1,0 +1,135 @@
+body {
+	width: 1060px;
+	height: 730px;
+	margin: 0 auto;
+	padding: 50px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* HEADER */
+
+h1 {
+	font-size: 40px;
+	padding-bottom: 35px;
+	font-family: Arial;
+}
+
+/* NAV */
+
+nav {
+	height: 40px;
+}
+nav ul {
+	width: inherit;
+	height: 100%;
+	
+}
+.header_nav {
+	background-image: url(../img/fon_nav.png);
+}
+nav ul li{
+	display: inline-block;
+	text-align: center;
+	padding: 12px 25px;
+	color: #fff;
+}
+.header_nav li:hover {
+	background-image: url(../img/fon_nav_hover.png);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+.header_nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* SECTION */
+
+section {
+	width: 100%;
+	height: 540px;
+	margin-top: 50px;
+}
+aside {
+	width: 238px;
+	height: auto;
+	border: 1px solid gray;
+	float: left;
+	margin-right: 25px;
+}
+aside ul li{
+	font-size: 16px;
+	font-family: Arial;
+	color: #656363;
+	padding: 13px 0 13px 22px;
+	border-top: 1px solid gray;
+	transition: padding-left 1s, background-color 0.5s;
+}
+aside ul li:hover {
+	padding-left: 35px;
+	background-color: #f9f9f9;
+}
+
+aside ul li:first-child {
+	border: none;
+}
+aside a {
+	text-decoration: none;
+	color: #656363;
+}
+article {
+	width: 760px;
+	height: auto;
+	float: right;
+	margin-left: 25px;
+}
+article p {
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 20px;
+	color: #2c2c2c;
+}
+strong {
+	font-weight: bold;
+}
+.content{
+	width: 100%;
+	height: 320px;
+	border: 1px solid gray;
+	padding: 20px 0 20px;
+}
+.imege {
+	width: 500px;
+	height: 307px;
+	padding: 20px;
+	margin: 0 auto;
+	background-image: url(../img/bike.jpg);
+	background-repeat: no-repeat;
+}
+
+/* FOOTER */
+
+footer {
+	width: 100%;
+	height: 40px;
+	background-color: #e1e1e1;
+}
+.footer_nav {
+	width: 80%;
+	height: 40px;
+	float: left;
+}
+.footer_nav a {
+	color: #2c2c2c;
+	text-decoration: none;
+	float: left;
+}
+
+.footer_nav a:hover {
+	text-decoration: underline;
+}
+footer p {
+	padding: 11px 40px 0 0;
+	float: right;
+}
