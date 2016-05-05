@@ -6,6 +6,15 @@ body {
 	width: 100%;
 	background-color: #efefef;
 }
+.line_bot {
+	border-bottom: 1px solid #ccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.line_top {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
 .wraper {
 	width: 510px;
 	height: 751px;
@@ -22,7 +31,8 @@ h2 {
 img {
 	height: 128px;
 	width: 109px;
-	margin: 0 37% ;
+	margin: 0 37%;
+	border-radius: 10px;
 }
 .content {
 	width: 80%;
@@ -30,14 +40,23 @@ img {
 }
 
  p {
- 	margin: 15px 0 15px 25px;
+ 	margin:0 0 15px 25px;
+ 	padding-left: 15px;
  	font-size: 18px;
  	line-height: 25px;
  }
  ul {
- 	margin-left: 50px;
+ 	margin-left: 70px;
  	margin-bottom: 15px;
  }
  li {
  	line-height: 20px;
+ }
+ a {
+ 	margin:0 0 15px 40px;
+	display: block;
+ }
+ .left {
+ 	padding-left: 20px;
+
  }
