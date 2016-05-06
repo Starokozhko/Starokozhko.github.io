@@ -11,7 +11,7 @@ body {
 h1 {
 	font-size: 40px;
 	padding-bottom: 35px;
-	font-family: Arial;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NAV */
@@ -28,6 +28,8 @@ nav ul {
 	background-image: url(../img/fon_nav.png);
 }
 nav ul li{
+	width: 90px;
+	font-family: Arial, Helvetica, sans-serif;
 	display: inline-block;
 	text-align: center;
 	padding: 12px 25px;
@@ -37,6 +39,7 @@ nav ul li{
 	background-image: url(../img/fon_nav_hover.png);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
+	width: 88px;
 }
 .header_nav a {
 	text-decoration: none;
@@ -59,7 +62,7 @@ aside {
 }
 aside ul li{
 	font-size: 16px;
-	font-family: Arial;
+	font-family: Arial, Helvetica, sans-serif;
 	color: #656363;
 	padding: 13px 0 13px 22px;
 	border-top: 1px solid gray;
@@ -67,7 +70,7 @@ aside ul li{
 }
 aside ul li:hover {
 	padding-left: 35px;
-	background-color: #f9f9f9;
+	background-color: #ccc;
 }
 
 aside ul li:first-child {
@@ -84,7 +87,7 @@ article {
 	margin-left: 25px;
 }
 article p {
-	font-family: Arial;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	padding: 20px;
@@ -130,6 +133,8 @@ footer {
 	text-decoration: underline;
 }
 footer p {
-	padding: 11px 40px 0 0;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 12px 23px 0 0;
 	float: right;
 }
