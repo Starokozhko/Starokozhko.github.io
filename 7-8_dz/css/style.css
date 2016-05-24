@@ -4,12 +4,16 @@
 }
 
 /*   HEADER   */
+/*.wraper {
+	
+	background: url(../img/header_fon.jpg) top center no-repeat;
+	background-size: cover;
 
+}*/
 header {
-	height: 798px;
 	background: url(../img/header_fon.jpg) center center no-repeat;
-	/*background-size: cover;*/
-	margin: 0 auto;
+	height: 770px;
+	margin: 0 auto 0;
 }
 
 
@@ -17,24 +21,24 @@ header {
 
 .wraper2 {
 	margin: 0 auto;
-	width: 500px;	
+	width: 770px;	
 }
 h1 {
 	font: 291%  'league_gothicregular';
 	line-height: 48px;
-	padding: 32px 0 0 18px;
+	padding: 17px 0 0 18px;
 	text-shadow: 1px 1px 1px #999;
 	font-weight: 500;
 	color: #fff;
 	text-align: left;
 }
 h1 span {
-	 background: linear-gradient(#322539, #745083);
-	 -webkit-background-clip: text;
-	 color: transparent;
-	 text-shadow: none;
-	 letter-spacing: 2px;
-	 margin-left: 2px;
+	background: linear-gradient(#322539, #745083);
+	-webkit-background-clip: text;
+	color: transparent;
+	text-shadow: none;
+	letter-spacing: 2px;
+	margin-left: 2px;
 }
 
 .menu li{
@@ -44,12 +48,12 @@ h1 span {
 .menu a{
 	color: #fff;
 	text-decoration: none;
-	/*letter-spacing: 1px;*/
-	/*padding-top: 50px;*/
 	font: 150%  'league_gothicregular';
 	text-shadow: 1px 1px 1px #999;
 }
-
+.menu a:hover {
+	border-bottom: 2px solid #edbfff;
+}
 .menu :nth-child(n+2){
 	padding-left: 12px;
 }
@@ -98,15 +102,26 @@ h1 span {
 .slider__fon__content__text h2 {
 	color: #fff;
 	font: 294%  'league_gothicregular';
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 .slider__fon__content__text h3 {
 	color: #edbfff;
 	font: 149%  'league_gothicregular';
+	height: 29px;
+	overflow: hidden;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	width: 270px;
 }
 .slider__fon__content__text p {
 	color: #fff;
-	font: 99%  'open_sanslight';
+	display: block;
+	font: 99% 'open_sanslight';
+	height: 103px;
+	line-height: 26px;
 	margin-top: 7px;
+	overflow: hidden;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	width: 265px;
 }
 .slider__fon__content__text :nth-child(4) {
 	margin-top: 8px;
@@ -127,6 +142,7 @@ h1 span {
 }
 
 .slider__fon__radio {
+	position: static;
 	padding-left: 18px;
 	clear: both;
 	margin-left:60%;
@@ -153,7 +169,7 @@ input:checked {
 /*   NAIN   */
 main {
 	clear: both;
-	margin-top: -35px;
+	margin-top: -22px;
 	height: 340px;
 	width: 100%;
 	background: linear-gradient(#775385, #37293e);
@@ -196,12 +212,16 @@ main {
 .main_menu--text h3 {
 	font: 148%  'league_gothicregular';
 	margin: -1px 0px 0 -2px;
+	text-shadow: 1px 0 0 rgba(15, 21, 24, 1);
 }
 .main_menu--text p {
 	font: 98%  'open_sanslight';
-	margin: 3px 0px 0 -2px;
+	height: 144px;
 	letter-spacing: 0.07px;
 	line-height: 24px;
+	margin: 3px 0px 0 -2px;
+	overflow: hidden;
+	text-shadow: 1px 0 0 rgba(15, 21, 24, 1);
 }
 .main_menu--text a {
 	font: 120%  'league_gothicregular';
@@ -256,7 +276,7 @@ main {
 }
 .slider2 {
 	height: inherit;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 	width: inherit;
 }
@@ -311,22 +331,27 @@ main {
 	margin: 18px 0 0 -24px;
 }
 .slides h4 {
-	font: 150%  'league_gothicregular';
 	color: #454545;
-	text-transform: uppercase;
+	font: 150%  'league_gothicregular';
 	margin: 26px 0 0 40px;
+	text-shadow: 1px 0 0 #fff;
+	text-transform: uppercase;
 }
 .slides h5 {
-	font: 150%  'league_gothicregular';
 	color: #edbfff;
-	text-transform: uppercase;
+	font: 150%  'league_gothicregular';
 	margin: -4px 0 0 41px;
+	text-shadow: 1px 0 0 #fff;
+	text-transform: uppercase;
 }
 .slides p {
-	font: 99%  'open_sanslight';
 	color: #454545;
-	margin: 5px 0 0 40px;
+	font: 99%  'open_sanslight';
+	height: 147px;
 	line-height: 156%;
+	margin: 5px 0 0 40px;
+	overflow: hidden;
+	text-shadow: 1px 0 0 #fff;
 }
 
 .wrapper_slider .controls {
@@ -365,7 +390,7 @@ main {
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
-.wrapper_slider label:hover, 
+.wrapper_slider label:hover,
 #slide1:checked ~ .controls label:nth-of-type(1),
 #slide2:checked ~ .controls label:nth-of-type(2),
 #slide3:checked ~ .controls label:nth-of-type(3),
@@ -389,26 +414,29 @@ main {
 /* Слайдел №2 Конец */
 
 .content--right h3 {
-	font: 185%  'league_gothicregular';
 	color: #454545;
+	font: 185%  'league_gothicregular';
 	margin: 26px 0 13px 36px;
+	text-shadow: 1px 0 0 #fff;
 }
 .content--right--item1--img {
-	background: url(../img/item.png) no-repeat;
+	background: url(../img/spraites_item.png) no-repeat;
 	width: 49px;
 	height: 49px;
 	float: left;
 	margin: 0 17px 0 36px;
 }
 .content--right--item2--img {
-	background: url(../img/item.png) no-repeat;
+	background: url(../img/spraites_item.png) no-repeat;
+	background-position: -49px 0;
 	width: 49px;
 	height: 49px;
 	float: left;
 	margin: 0 17px 0 36px;
 }
 .content--right--item3--img {
-	background: url(../img/item.png) no-repeat;
+	background: url(../img/spraites_item.png) no-repeat;
+	background-position: -98px 0;
 	width: 49px;
 	height: 49px;
 	float: left;
@@ -422,18 +450,24 @@ main {
 }
 .content--right h5 {
 	font: 100%  'open_sansextrabold';
+	text-shadow: 1px 0 0 #fff;
 }
 .content--right p {
 	font: 99%  'open_sanslight';
+	height: 26px;
 	line-height: 165%;
+	overflow: hidden;
+	text-shadow: 1px 0 0 #fff;
+	width: 260px;
 }
 .content--right a {
-	font: 114%  'league_gothicregular';
-	color: #454545;
-	text-decoration: none;
 	clear: both;
+	color: #454545;
 	display: block;
+	font: 114%  'league_gothicregular';
 	margin: 17px 0 0 274px;
+	text-decoration: none;
+	text-shadow: 1px 0 0 #fff;
 }
 
 
@@ -452,7 +486,7 @@ main {
 	background-image: url(../img/logo_bllabong.png);
 	width: 69px;
 	height: 64px;
-	margin-left: 21px;
+	margin: 26px 0 0 21px;
 }
 .logo2 {
 	background-image: url(../img/logo_gc.png);
@@ -494,19 +528,22 @@ main {
 }
 .categories {
 	float: left;
-	width: 205px;
 	margin-top: 99px;
+	width: 205px;
 }
 .categories h2 {
-	font: 150%  'league_gothicregular';
 	color: #454545;
+	font: 150%  'league_gothicregular';
 	margin-bottom: 8px;
-
+	text-shadow: 1px 0 0 #fff;
 }
 .categories p {
-	font: 99%  'open_sanslight';
 	color: #787878;
-		line-height: 24px;
+	font: 99%  'open_sanslight';
+	height: 170px;
+	line-height: 24px;
+	overflow: hidden;
+	text-shadow: 1px 0 0 #fff;
 }
 .categories--one {
 	margin-left: 18px;
@@ -517,6 +554,10 @@ main {
 .categories--three {
 	margin-left: 58px;
 }
+.logo_bottom {
+	display: none;
+}
+
 /*   FOOTER   */
 
 footer {
