@@ -1,4 +1,4 @@
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 960px){
 
 	header {
 		height: 846px;
@@ -265,7 +265,7 @@
 } /* ============ END ============ */
 
 
-@media screen and (max-width: 785px){
+@media screen and (max-width: 767px){
 	header {
 		background: url(../img/header_fon.jpg) top center no-repeat;
 		height: 548px;
@@ -524,7 +524,7 @@
 
 
 
-@media screen and (max-width: 498px){
+@media screen and (max-width: 479px){
 	
 	header {
 		height: 516px;
