@@ -483,7 +483,7 @@ main {
 	margin-top: 26px;
 }
 .logo1 {
-	background-image: url(../img/logo_bllabong.png);
+	background: url(../img/logo_bllabong.png) no-repeat;
 	width: 69px;
 	height: 64px;
 	margin: 26px 0 0 21px;
@@ -507,13 +507,17 @@ main {
 	margin-left: 64px;
 }
 .logo5 {
-	background-image: url(../img/logo_raca.png);
+	background-image: url(../img/raca.svg);
+	-webkit-background-size: 103px 21px;
+	background-size: 103px 21px;
 	width: 103px;
 	height: 21px;
 	margin: 48px 0 0 59px;
 }
 .logo6 {
-	background-image: url(../img/logo_vonzipper.png);
+	background-image: url(../img/vonzipper.svg);
+	-webkit-background-size: 78px 61px;
+	background-size: 78px 61px;
 	width: 78px;
 	height: 61px;
 	margin: 28px 0 0 55px;
