@@ -4,11 +4,9 @@
 		height: 846px;
 		margin: 0 auto;
 	}
-
 	.wraper2 {
-		width: 988px;	
+		width: 988px;
 	}
-
 	header h1 {
 		float: left;
 		font-size: 306%;
@@ -532,7 +530,8 @@
 	}
 
 	.wraper2 {
-		width: 320px;	
+		width: 320px;
+		max-width: 479px;
 	}
 	header h1 {
 		padding: 67px 0 0 82px;
