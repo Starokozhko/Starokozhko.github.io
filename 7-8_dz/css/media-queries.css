@@ -60,9 +60,9 @@
 	}
 	.slider__fon__content__text h3 {
 		font-size: 209%;
-		height: 22px;
+		height: 25px;
 		letter-spacing: -0.5px;
-		line-height: 20px;
+		line-height: 28px;
 		width: 405px;
 	}
 	.slider__fon__content__text p {
@@ -279,17 +279,20 @@
 		letter-spacing: -1px;
 	}
 	.menu_top {
-		margin: 23px 0 0 119px;
+		margin: 23px 0 0 118px;
 		position: absolute;
 		width: 244px;
 	}
 	.menu_top:hover {
 		background-color: rgba(54, 41, 62, 0.9);
 		border-radius: 10px;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
 		border: 1px solid #051116;
+		overflow: hidden;
 	}
 	.menu_top:hover li {
-		border-bottom: 2px solid rgba(0,0,0,0);
+		/*border-bottom: 2px solid rgba(0,0,0,0);*/
+		border-bottom: 1px solid #36283e;
 		display: block;
 	}
 
@@ -305,10 +308,9 @@
 		border-radius: 0 0 10px 10px;
 	}
 	.menu_top li {
-		border-bottom: 1px solid #3f3346;
-		border-top: 1px solid #513e59;
 		border: 1px solid rgba(0,0,0,0);
-		display: block;
+		border-top: 1px solid #513e59;
+		border-bottom: 1px solid #3f3346;
 		display: none;
 		margin: 0 auto;
 	}
