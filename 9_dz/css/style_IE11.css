@@ -1,0 +1,8 @@
+h1 span {
+	/*background: linear-gradient(#322539, #745083);*/
+   -webkit-background-clip: text;
+    color: #745083;
+    text-shadow: none;
+    letter-spacing: 2px;
+    margin-left: 2px;
+}

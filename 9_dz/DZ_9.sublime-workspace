@@ -1,0 +1,719 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"logo_awsm.png	w:50 h:63"
+			],
+			[
+				"b",
+				"bridgestone.png	w:97 h:14"
+			],
+			[
+				"t",
+				"toyo_tires.png	w:83 h:21"
+			],
+			[
+				"h",
+				"html_2.png	w:98 h:99"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/index.html",
+			"settings":
+			{
+				"buffer_size": 9534,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/css/style.css",
+			"settings":
+			{
+				"buffer_size": 11186,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/css/media-queries.css",
+			"settings":
+			{
+				"buffer_size": 10435,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 128.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/css"
+	],
+	"file_history":
+	[
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/9_dz/index.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/9_dz/css/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/9_dz/css/style_IE8.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/css/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/css/media-queries.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/index.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/9_dz/js/respond.min.js",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/9_dz/css/style_IE11.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/9_dz/css/styleIE8.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/img/logo_vonzipper.svg",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/img/group.svg",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/files/spraites_key.svg",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/css/stylesheet.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/files/transfonter.org-20160523-102218/stylesheet.css",
+		"/G/slider/style.css",
+		"/G/slider/slider.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/css/style.css",
+		"/D/Уроки/GoIT/slider/index.html",
+		"/D/Уроки/GoIT/slider/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/index.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/css/style_article.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/css/stylesheet.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/files/webfontkit-20160516-064003/stylesheet.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/files/webfontkit-20160516-050050/arialnarrow-bolditalic-demo.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/files/webfontkit-20160516-050050/specimen_files/grid_12-825-55-15.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/files/webfontkit-20160516-050050/specimen_files/specimen_stylesheet.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/5_dz/1/css/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/5_dz/2/index.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/5_dz/1/index.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/6_dz/style.sass",
+		"/C/Users/Юрий/AppData/Roaming/Sublime Text 3/Packages/User/LiveReload.sublime-settings",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/5_dz/1/css/stylesheet.css",
+		"/D/Уроки/GoIT/Var max/soft-skills/index.html",
+		"/D/Уроки/GoIT/Var max/soft-skills/css/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/5_dz/1/fonts/stylesheet.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/5_dz/1/css/stile.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/5_dz/2/css/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/3_dz/css/style.css",
+		"/D/Уроки/GoIT/DZ/Stady_GoIT/1_ss/index.html",
+		"/D/Уроки/GoIT/Var max/test/css/style.css",
+		"/D/Уроки/GoIT/Var max/test/index.html",
+		"/D/Уроки/GoIT/Var max/test/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/3_dz/index.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/4_dz/index.html",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/4_dz/css/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/1_dz/style.css",
+		"/D/Уроки/GoIT/DZ/Stady_GoIT/1_ss/style.css",
+		"/D/Уроки/GoIT/DZ/Stady_GoIT/1_ss/myscript.js",
+		"/D/Уроки/GoIT/DZ/Stady_GoIT/1_dz/style.css",
+		"/D/Уроки/GoIT/DZ/Starokozhko.github.io/1_dz/dz1.html",
+		"/D/Уроки/GoIT/DZ/Stady_GoIT/1_ss/reset.css",
+		"/D/Уроки/GoIT/normalize.css",
+		"/D/Уроки/GoIT/Var max/goit-progect/goit progect/css/style.css",
+		"/D/Уроки/GoIT/Var max/goit-progect/goit progect/index.html",
+		"/D/Уроки/GoIT/DZ/Stady_GoIT/1_dz/dz1.html",
+		"/D/Уроки/GoIT/DZ/1_dz/dz1.html",
+		"/D/Уроки/GoIT/DZ/1_dz/style.css",
+		"/J/home/localhost/www/php_stady/111.html",
+		"/D/work/PSD Макеты сайтов/1.1/www/css/mystyle.css",
+		"/J/home/localhost/www/php_stady/mystyle.css",
+		"/J/home/localhost/www/moto/js/myscript.js",
+		"/J/home/localhost/www/moto/js/jquery.js",
+		"/J/home/localhost/www/moto/js/allscripts.js",
+		"/D/work/ИА/Сайт/New Сайт/price.html",
+		"/J/home/localhost/www/php_stady/222.php",
+		"/J/home/localhost/www/111.php",
+		"/J/home/localhost/www/php_stady/include_require_cookies_ob_start_tasks/zd_1.php",
+		"/J/home/localhost/www/php_stady/include_require_cookies_ob_start_tasks/setcook.php",
+		"/J/home/localhost/www/php_stady/include_require_cookies_ob_start_tasks/zd_3.php",
+		"/J/home/localhost/www/php_stady/include_require_cookies_ob_start_tasks/zd_2.php",
+		"/J/home/localhost/www/php_stady/dopZd_2.php",
+		"/J/home/localhost/www/php_stady/dopZd_3.php",
+		"/J/home/localhost/www/php_stady/zagotovka.php",
+		"/J/home/localhost/www/php_stady/index.html",
+		"/J/home/localhost/www/php_stady/mystyle",
+		"/J/home/localhost/www/php_stady/include_require_cookies_ob_start_tasks/1.php",
+		"/J/home/localhost/www/moto/index.html",
+		"/J/home/test1.ru/www/index.html",
+		"/J/home/localhost/www/php_stady/include_require_cookies_ob_start_tasks/1_1.html",
+		"/J/home/localhost/www/php_stady/include_require_cookies_ob_start_tasks/1_1",
+		"/J/home/localhost/www/php_stady/include_require_cookies_ob_start_tasks/1,1html",
+		"/D/Vremennue/wedding/wedding.css",
+		"/D/Vremennue/wedding/wedding.html",
+		"/D/Уроки/Уроки по Bootstrap/www/bootstrap start/css/1.css",
+		"/D/Уроки/Уроки по Bootstrap/www/bootstrap start/index.html",
+		"/D/Уроки/Уроки по Bootstrap/www/bootstrap start/fonts/fonts.css",
+		"/D/work/PSD Макеты сайтов/Вар медиа запросы.css",
+		"/D/work/PSD Макеты сайтов/1.1/www/css/style.css",
+		"/D/work/PSD Макеты сайтов/1.1/www/index.html",
+		"/D/work/PSD Макеты сайтов/1/www/index.html",
+		"/C/Users/Юрий/Desktop/index.html",
+		"/J/home/phptest/www/index.php",
+		"/D/Уроки/Responsive/2/sidebar-responsive/sidebar-responsive/css/style.css",
+		"/D/work/PSD Макеты сайтов/style_menu.css",
+		"/D/work/PSD Макеты сайтов/menu JS code.html",
+		"/D/Уроки/Responsive/2/sidebar#2-responsive/sidebar#2-responsive/index.html",
+		"/D/Уроки/Responsive/2/sidebar-responsive/sidebar-responsive/index.html",
+		"/D/Уроки/Responsive/2/menu + logo-responsive/menu + logo-responsive/index.html",
+		"/D/Уроки/Responsive/2/menu + logo-responsive/menu + logo-responsive/css/style.css",
+		"/D/Уроки/Responsive/2/menu-adaptive/menu-responsive/css/style.css",
+		"/D/work/PSD Макеты сайтов/menu JS code",
+		"/D/work/PSD Макеты сайтов/1/www/css/style.css",
+		"/D/work/PSD Макеты сайтов/1/www/css/mystyle.css",
+		"/D/work/PSD Макеты сайтов/1/www2/css/style.css",
+		"/D/work/PSD Макеты сайтов/1/www2/index.html",
+		"/D/work/PSD Макеты сайтов/1/test.html",
+		"/D/work/PSD Макеты сайтов/1/www/style.css",
+		"/D/Уроки/Практика по HTML5/с сайта/style.css",
+		"/D/Уроки/Практика по HTML5/с сайта/index.html",
+		"/D/Уроки/Урок PHP/Книги/My FirstConsoleApp.exe.config",
+		"/D/work/PSD Макеты сайтов/style.css",
+		"/D/work/PSD Макеты сайтов/index.html",
+		"/D/work/PSD Макеты сайтов/bootstrap.min.css",
+		"/D/work/PSD Макеты сайтов/1/index.html",
+		"/D/work/PSD Макеты сайтов/1/css/style.css",
+		"/D/Уроки/TEST/2/style.css",
+		"/J/home/wp.local/www/wp-content/themes/test/style.css",
+		"/D/Уроки/TEST/1/css/style.css",
+		"/J/home/wp.local/www/wp-content/themes/test/index.php",
+		"/D/Уроки/TEST/2/index.html",
+		"/D/Уроки/TEST/1/index2.html",
+		"/J/home/cms/www/engine/classes/addnews.class.php",
+		"/D/Уроки/TEST/1/index.html",
+		"/D/Уроки/Практика по HTML5/index.html",
+		"/D/work/PSD Макеты сайтов/Свой слайдр/css/style.css",
+		"/D/Уроки/TEST/1/css/bootstrap.min.css",
+		"/D/Уроки/TEST/1/style.css",
+		"/D/Уроки/Практика по HTML5/style.css"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"menu-bootom",
+			"categories",
+			"content",
+			"main_menu",
+			"slider__fon",
+			".slider__fon__content__text h3",
+			"border-top",
+			"li",
+			"^li",
+			"menu_top",
+			"position: re",
+			"arrow_right",
+			"arrow_left",
+			".slider__fon__content:",
+			".slider__fon__content",
+			"tow",
+			".slider__fon__content",
+			"wraper2",
+			"name='top'",
+			".slider__fon__content:after",
+			".slider__fon__content__img",
+			".slider__fon__content__text",
+			".slider__fon__content:before",
+			"slider__fon__radio",
+			".slider__fon__content:after",
+			".slider__fon__content:before",
+			"hover",
+			"content--right p",
+			"slides p",
+			"main_menu--text p",
+			"hidden",
+			"hover",
+			".categories",
+			"#;",
+			"slides",
+			"inner",
+			"ear_release",
+			"appearance",
+			"ear_release",
+			"appearance",
+			"ear_relise",
+			"aside",
+			"block",
+			"too",
+			";\n",
+			".yellow {\n	background-color: yellow;\n}",
+			">\n",
+			"description",
+			"<i>сильные стороны: </i>",
+			"right",
+			"<!-- <ul class='dropdown'>\n							<li><a href=\"#\">Путешествие 1</a></li>\n							<li><a href=\"#\">Путешествие 2</a></li>\n							<li><a href=\"#\">Путешествие 3</a></li>\n							<li><a href=\"#\">Путешествие 4</a></li>\n							<li><a href=\"#\">Путешествие 5</a></li>\n						</ul> -->",
+			">\n",
+			"HEADER",
+			">\n",
+			"botton",
+			"marg",
+			"text_block_left",
+			"logo",
+			"slider",
+			"data-toggle",
+			"navbar-form",
+			".navbar-inverse.navbar-collapse,.navbar-inverse.navbar-form",
+			".navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form",
+			"container",
+			"center_block",
+			"text_center_2",
+			"center_block block_1",
+			"center-block",
+			"::after",
+			"::afte",
+			"::afrer",
+			"::before",
+			":before",
+			"10",
+			"text-decoration",
+			"a{text-decoration",
+			"text-decoration",
+			"a*text-decoration",
+			"a * text-decoration",
+			"text-decoration",
+			"500",
+			"*assoc",
+			"trim",
+			"ход",
+			"global",
+			"code"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9182,
+								9182
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "html",
+							"buffer_scroll_name": "cae6c1d5",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"is_xml": false,
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5838.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10553,
+								10553
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "css",
+							"buffer_scroll_name": "9c6d1a37",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"spell_check": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10786.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Уроки/GoIT/DZ/Starokozhko.github.io/7-8_dz/css/media-queries.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10435,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3739,
+								3750
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bs_sintax": "css",
+							"buffer_scroll_name": "9d9bf897",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"spell_check": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 13.0,
+						"translation.y": 4586.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.549372421311,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "DZ_9.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 120.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
