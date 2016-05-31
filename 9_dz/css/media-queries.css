@@ -346,7 +346,7 @@
 		border-bottom: 1px solid #3f3346;
 		border-top: 1px solid #513e59;
 		border: 1px solid rgba(0,0,0,0);
-		display: block;
+		
 		display: none;
 		margin: 0 auto;
 	}
@@ -617,7 +617,7 @@
 		padding-left: 21px;
 		top: 49px;
 	}
-	
+
 	.main_fons {
 		height: 500px;
 	}
