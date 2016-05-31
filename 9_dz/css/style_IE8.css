@@ -2,6 +2,11 @@
 	margin: 0;
 	padding: 0;
 }
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: '';
+}
 
 .wraper {
 	background: url(../img/header_fon.jpg) top center no-repeat;
@@ -23,11 +28,13 @@ header {
 h1 {
 	font: 291%  'League Gothic';
 	line-height: 48px;
-	padding: 17px 0 0 18px;
+	padding: 50px 0 0 18px;
+	margin-right: 20px;
 	text-shadow: 1px 1px 1px #999;
 	font-weight: 500;
 	color: #fff;
 	text-align: left;
+	float: left;
 }
 h1 span {
 	background: linear-gradient(#322539, #745083);
@@ -45,19 +52,27 @@ h1 span {
 .menu a{
 	color: #fff;
 	text-decoration: none;
-	font: 150%  'League Gothic';
+	font: 130%  'League Gothic';
 	text-shadow: 1px 1px 1px #999;
 }
-.menu a:hover {
+
+.menu a:hover,
+.menu_big a:hover {
 	border-bottom: 2px solid #edbfff;
 }
 .menu :nth-child(n+2){
 	padding-left: 12px;
 }
+.menu_top {
+	float: right;
+	margin-top: 70px;
+	display: none;
+}
 
 .slider {
 	width: 100%;
 	height: 423px;
+	margin: 70px 0 77px;
 }
 .slider__fon {
 	height: 400px;
@@ -116,36 +131,45 @@ h1 span {
 	margin: -23px 50px 0 0;
 }
 
-.slider__fon__radio {
-	position: static;
-	padding-left: 18px;
-	clear: both;
-	margin-left:60%;
-	width: 120px;
-	height: 42px;
+.smallnav__container {
+	position: absolute;
+	top: 650px;
+	left: 0;
+	width: 960px;
+	margin: 0 auto;
 }
 
-input:checked {
-	background-position: -18px 0;
+.smallnav {
+	margin-right: 160px;
+	float: right;
 }
-[name^='slidee_'] {
-	-webkit-appearance: none;
-	background-position: 0 0;
-	background: url(../img/label_and_activ.png) no-repeat;
-	display: block;
-	float: left;
-	height: 17px;
-	margin: 25px 0 0 5px;
+
+.smallnav__button {
 	width: 17px;
+	height: 17px;
+	margin-right: 7px;
+	float: left;
+	background: url('../img/button.png');
+	cursor: pointer;
 }
 
+.smallnav__button--active {
+	background: url('../img/button_active.png');
+}
 
+.smallnav__button:hover {
+	background: url('../img/button_active.png');
+}
+.menu_big {
+		margin-top: 70px;
+	}
 
 /*   NAIN   */
 main {
 	clear: both;
-	margin-top: -22px;
 
+}
+.main_fons {
 	background: #37293e;
 	width: 100%;
 	height: 342px;
@@ -153,9 +177,7 @@ main {
 	border-bottom: 1px solid #1d2f37;
 	background: rgb(50, 37, 57);
 	background: -ms-linear-gradient(270deg, rgb(50, 37, 57) 0%, rgb(116, 80, 131) 100%);
-    
 }
-
 
 .main_menu {
 	width: 210px;
@@ -214,19 +236,19 @@ main {
 	text-shadow: 1px 0 0 #000;
 }
 .main_menu--text a:hover {
-	text-shadow: 0 0 8px #fff;
+	text-decoration: underline;
 }
 .main_menu--left {
 	float: left;
-	margin: 75px 0 0 31px;
+	margin: 70px 0 0 31px;
 }
 .main_menu--center {
 	float: left;
-	margin: 75px 0 0 42px;
+	margin: 70px 0 0 42px;
 }
 .main_menu--right {
 	float: right;	
-	margin: 75px 16px 0 0;
+	margin: 70px 16px 0 0;
 }
 
 .content {
@@ -488,7 +510,7 @@ main {
 	margin-left: 64px;
 }
 .logo5 {
-	background-image: url(../img/raca.svg);
+	background-image: url(../img/logo_raca.png);
 	-webkit-background-size: 103px 21px;
 	background-size: 103px 21px;
 	width: 103px;
@@ -496,7 +518,7 @@ main {
 	margin: 48px 0 0 59px;
 }
 .logo6 {
-	background-image: url(../img/vonzipper.svg);
+	background-image: url(../img/logo_vonzipper.png);
 	-webkit-background-size: 78px 61px;
 	background-size: 78px 61px;
 	width: 78px;
@@ -548,7 +570,7 @@ main {
 footer {
 	width: 100%;
 	height: 201px;
-	background: url(../img/fotter.jpg) center center no-repeat;
+	background: url(../img/fotter.jpg) top center no-repeat;
 }
 footer p {
 	font: 75%  'Open Sans Light';
@@ -561,7 +583,7 @@ footer span {
 	font: 100%  'Open Sans Extrabold';
 }
 
-.menu--bootom li {
+.menu--bootom  {
 	margin-top: 44px;
 }
 .menu--bootom a {
@@ -594,6 +616,11 @@ footer span {
 		font-size: 306%;
 		letter-spacing: -1px;
 		padding: 52px 0 0 10px;
+	}
+	.menu_big {
+		display: block;
+		float: right;
+		margin-top: 70px;
 	}
 	.menu li {
 		float: left;
@@ -864,6 +891,10 @@ footer span {
 		margin: 23px 0 0 119px;
 		position: absolute;
 		width: 244px;
+		display: block;
+	}
+	.menu_big {
+		display: none;
 	}
 	.menu_top:hover {
 		background-color: rgba(54, 41, 62, 0.9);
