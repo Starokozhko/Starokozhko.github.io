@@ -13,6 +13,9 @@
 		letter-spacing: -1px;
 		padding: 52px 0 0 10px;
 	}
+	.menu_big {
+		display: none;
+	}
 	.menu li {
 		float: left;
 		padding-top: 32px;
@@ -278,10 +281,14 @@
 	header h1 span{
 		letter-spacing: -1px;
 	}
+	.menu_big {
+		display: none;
+	}
 	.menu_top {
 		margin: 23px 0 0 119px;
 		position: absolute;
 		width: 244px;
+		display: block;
 	}
 	.menu_top:hover {
 		background-color: rgba(54, 41, 62, 0.9);
