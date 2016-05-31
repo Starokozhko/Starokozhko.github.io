@@ -9,7 +9,7 @@
 	   }
 
 
-}
+	}
 
 
 	header {
@@ -144,7 +144,10 @@
 	.slide4 {
 		margin-left: 21px;
 		width: 400px;
+		height: 294px;
+		background: url(../img/fon_slider2.png) no-repeat;
 	}
+
 	.wrapper_slider .controls {
 		margin-left: -131px;
 		top: 93.2%;
@@ -418,6 +421,9 @@
 	.main_menu {
 		width: 426px;
 	}
+	.main_fons {
+		height: 470px;
+	}
 	.main_menu--left,
 	.main_menu--center,
 	.main_menu--right {
@@ -611,7 +617,10 @@
 		padding-left: 21px;
 		top: 49px;
 	}
-
+	
+	.main_fons {
+		height: 500px;
+	}
 	main {
 		height: 463px;
 		padding: 67px 0;
