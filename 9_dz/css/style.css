@@ -63,6 +63,33 @@ h1 span {
 .menu_big {
 	display: none;
 }
+.smallnav__container {
+	clear: both;
+	margin: 0 -165px;
+	padding-top: 26px;
+}
+
+.smallnav {
+	margin-right: 160px;
+	float: right;
+}
+
+.smallnav__button {
+	width: 17px;
+	height: 17px;
+	margin-right: 7px;
+	float: left;
+	background: url('../img/button.png');
+	cursor: pointer;
+}
+
+.smallnav__button--active {
+	background: url('../img/button_active.png');
+}
+
+.smallnav__button:hover {
+	background: url('../img/button_active.png');
+}
 .slider {
 	width: 100%;
 	height: 423px;
@@ -178,8 +205,11 @@ main {
 	height: 340px;
 	width: 100%;
 	background: linear-gradient(#775385, #37293e);
+	background: -ms-linear-gradient(#775385, #37293e);
+	background: -webkit-linear-gradient(#775385, #37293e);
 	border: 1px solid #000;
 }
+
 
 .main_menu {
 	width: 210px;
