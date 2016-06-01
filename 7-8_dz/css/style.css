@@ -481,10 +481,11 @@ main {
 	width: 100%;
 
 }
-.logos_bottom--img {
+.logos_bottom-img {
 	float: left;
 	margin-top: 26px;
 }
+
 .logo1 {
 	background: url(../img/logo_bllabong.png) no-repeat;
 	width: 69px;
