@@ -502,7 +502,7 @@
 	/* Footer      */
 
 	.menu-bootom li {
-		margin: 43px 10px 0 26px;
+		margin: 43px 0 0 26px;
 	}
 	.menu-bootom li a {
 		font-size: 125%;
@@ -511,10 +511,10 @@
 	.menu-bootom li:nth-child(3),
 	.menu-bootom li:nth-child(4),
 	.menu-bootom li:nth-child(5) {
-		margin-left: 2px;
+		margin-left: 9px;
 	}
 	.menu-bootom li:nth-child(6) {
-		margin-left: 1px;
+		margin-left: 8px;
 	}
 	footer p {
 		margin: 32px 167px 0 0px;
