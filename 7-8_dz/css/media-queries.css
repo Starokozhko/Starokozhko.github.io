@@ -5,13 +5,13 @@
 		margin: 0 auto;
 	}
 	.wraper2 {
-		width: 988px;
+		width: 960px;
 	}
 	header h1 {
 		float: left;
-		font-size: 306%;
+		font-size: 298%;
 		letter-spacing: -1px;
-		padding: 52px 0 0 10px;
+		padding: 52px 0 0 0;
 	}
 	.menu li {
 		float: left;
@@ -20,17 +20,14 @@
 	.menu li:first-child {
 		margin-left: 171px;
 	}
-	.menu li:nth-child(2) {
-		margin-left: 21px;
-	}
+	.menu li:nth-child(2),
 	.menu li:nth-child(3),
 	.menu li:nth-child(4),
 	.menu li:nth-child(5) {
-		margin-left: 22px;
+		margin-left: 18px;
 	}
 	.menu li:nth-child(6) {
-		float: right;
-		margin: 27px 16px 0 22px;
+		margin: 25px 0 0 18px;
 	}
 
 	.slider {
@@ -39,19 +36,19 @@
 	}
 
 	.slider_fon-content {
-		width: 988px;
+		width: 960px;
 	}
 	.slider_fon-content:before {
-		margin: 180px 0 0 -308px;
+		margin: 180px 0 0 -322px;
 	}
 	.slider_fon-content-img {
-		margin: -17px 87px 0 0;
+		margin: -17px 73px 0 0;
 	}
 	.slider_fon-content:after {
 		margin: 180px -667px 0 5px;
 	}
 	.slider_fon-content-text {
-		margin: 70px 0 0 12px;
+		margin: 70px 0 0 5px;
 		width: 515px;
 	}
 	.slider_fon-content-text h2 {
@@ -60,9 +57,9 @@
 	}
 	.slider_fon-content-text h3 {
 		font-size: 209%;
-		height: 25px;
+		height: 24px;
 		letter-spacing: -0.5px;
-		line-height: 28px;
+		line-height: 24px;
 		width: 405px;
 	}
 	.slider_fon-content-text p {
@@ -70,13 +67,13 @@
 		height: 150px;
 		letter-spacing: 0.1px;
 		line-height: 24px;
-		margin-top: 12px;
+		margin-top: 10px;
 		width: 505px;
 	}
 
 	.slider_fon-radio {
 		margin-left: 59%;
-		padding: 52px 0 0 9px;
+		padding: 52px 0 0 14%;
 	}
 	main {
 		margin-top: -13px;
@@ -158,7 +155,7 @@
 		margin: 25px 0 13px 38px;
 	}
 	.content-right p {
-		width: 375px;
+		width: 367px;
 	}
 	.content-right-item1-img {
 		margin-right: 18px;
@@ -228,7 +225,7 @@
 		margin-top: -3px;
 	}
 	.categories_two {
-		margin-left: 58px;
+		margin-left: 40px;
 	}
 
 	.categories_two h2,
@@ -236,11 +233,18 @@
 		font-size: 187%;
 	}
 	.categories_three {
-		margin-left: 60px;
+		margin-left: 40px;
 	}
 	
 	footer {
 		height: 114px;
+	}
+	.menu-bootom {
+		float: left;
+		margin-top: 17px;
+	}
+	.menu-bootom a {
+		font-size: 129%;
 	}
 	.menu-bootom li {
 		padding-top: 0;
@@ -256,7 +260,7 @@
 		margin: 25px 0px 0 24px;
 	}
 	footer p {
-		margin: 50px 15px 0 0;
+		margin: 50px 30px 0 0;
 	}
 
 

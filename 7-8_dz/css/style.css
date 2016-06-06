@@ -240,15 +240,15 @@ main {
 }
 .main_menu-left {
 	float: left;
-	margin: 75px 0 0 31px;
+	margin: 75px 0 0 15px;
 }
 .main_menu-center {
 	float: left;
 	margin: 75px 0 0 42px;
 }
 .main_menu-right {
-	float: right;	
-	margin: 75px 16px 0 0;
+	float: left;	
+	margin: 75px 0 0 15px;
 }
 
 .content {
