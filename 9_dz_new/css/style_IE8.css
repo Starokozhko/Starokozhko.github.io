@@ -1,22 +1,29 @@
 
 h1 {
 	font: 291%  'League Gothic';
+	text-shadow: 0 3px 3px rgba(150, 150, 150, 1);
 }
 
 
 .clearfix::after {
-    display: block;
-    clear: both;
-    content: '';
+	display: block;
+	clear: both;
+	content: '';
 }
 
 
 h1 {
 	text-align: center;
 }
+.menu_top {
+	float: right;
+} 
+
 .menu li{
 	display: inline;
 	margin: 25px 18px;
+
+	float: left;
 }
 .menu a{
 	color: #fff;
