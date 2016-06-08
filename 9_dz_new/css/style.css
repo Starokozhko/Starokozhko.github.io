@@ -141,8 +141,11 @@ li.point-check {
 	border-top: 1px solid #34263b;
 	border-bottom: 1px solid #34263b;
 
-	background: linear-gradient(#775385, #37293e);
 	background: -moz-linear-gradient(#775385, #37293e);
+	background: -ms-linear-gradient(#775385, #37293e);
+	background: -webkit-linear-gradient(#775385, #37293e);
+	background: -o-linear-gradient(#775385, #37293e);
+	background: linear-gradient(#775385, #37293e);
 }
 .about_menu {
 	width: 210px;

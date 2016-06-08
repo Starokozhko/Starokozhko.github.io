@@ -46,8 +46,8 @@ h1 {
 	height: 342px;
 	border-top: 1px solid #33253a;
 	border-bottom: 1px solid #1d2f37;
-
+	background: -ms-linear-gradient(#775385, #37293e);
 	background: #37293e;
-
+	background: rgb(50,37,57);
 }
 
