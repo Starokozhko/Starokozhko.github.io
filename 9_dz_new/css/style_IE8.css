@@ -34,12 +34,20 @@ h1 {
 .menu_top {
 		margin: 22px 0 0 38px;
 }
-.point li{
+.arrow {
+	display: none;
+}
+.point li,
+.point-white li{
 	display: inline;
 }
 .about {
-	height: 596px;
 	width: 100%;
+	height: 342px;
+	border-top: 1px solid #33253a;
+	border-bottom: 1px solid #1d2f37;
+
 	background: #37293e;
+
 }
 
