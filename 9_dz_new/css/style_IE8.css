@@ -3,7 +3,16 @@ h1 {
 	font: 291%  'League Gothic';
 	text-shadow: 0 3px 3px rgba(150, 150, 150, 1);
 }
-
+h1, h2, h3, h4, h5, a {
+	font: 'League Gothic';
+}
+p {
+	font : 'Open Sans Light';
+}
+.news-right h5,
+footer span {
+	font: 'Open Sans Extrabold';
+}
 
 .clearfix::after {
 	display: block;
