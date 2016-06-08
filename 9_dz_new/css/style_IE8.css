@@ -1,0 +1,39 @@
+
+h1 {
+	font: 291%  'League Gothic';
+}
+@media only screen and (max-width : 479px){
+
+
+.wraper {
+	width: 320px;
+}
+.fon_header {
+	height: 516px;
+}
+h1 {
+	text-align: center;
+}
+.menu li{
+	display: inline;
+	margin: 25px 18px;
+}
+.menu a{
+	color: #fff;
+	text-decoration: none;
+	font: 130%  'League Gothic';
+	text-shadow: 1px 1px 1px #999;
+}
+.menu_top {
+		margin: 22px 0 0 38px;
+}
+.point li{
+	display: inline;
+}
+.about {
+	height: 596px;
+	width: 100%;
+	background: #37293e;
+}
+
+} /* END width 479 */
