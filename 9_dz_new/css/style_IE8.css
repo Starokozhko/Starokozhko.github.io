@@ -2,15 +2,15 @@
 h1 {
 	font: 291%  'League Gothic';
 }
-@media only screen and (max-width : 479px){
 
 
-.wraper {
-	width: 320px;
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: '';
 }
-.fon_header {
-	height: 516px;
-}
+
+
 h1 {
 	text-align: center;
 }
@@ -36,4 +36,3 @@ h1 {
 	background: #37293e;
 }
 
-} /* END width 479 */
