@@ -37,11 +37,16 @@ h1 {
 .menu a{
 	color: #fff;
 	text-decoration: none;
-	font: 130%  'League Gothic';
+	font: 130% ;
 	text-shadow: 1px 1px 1px #999;
 }
 .menu_top {
 		margin: 22px 0 0 38px;
+}
+.slider-fon {
+	height: 400px;
+	background: url(../img/slider_fon.png) center no-repeat;
+	margin-top: 50px;
 }
 .arrow {
 	display: none;
