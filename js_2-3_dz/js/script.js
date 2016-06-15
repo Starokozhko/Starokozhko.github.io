@@ -39,23 +39,28 @@ obj.setContent('h2', 'Тест по программированию', 0);
 obj.addElement('ol', 'form', 0);
 
 for (var i = 0; i < 3; i++) {
-    obj.addElement('li','ol', 0);
-    obj.addElement('h3', 'li', i);
-    obj.setContent('h3', 'Вопрос №'+(i+1), i);
 
-    for (var a = 0; a < 3; a++) {
-        var number = 3*i+a;
-        obj.addElement('div', 'li', i);
-        obj.addElement('section', 'div', number);
-        obj.setAttr('section', 'margin-left: 20px', 'style', number);
-        obj.addClass('section', 'checkbox', number);
-        obj.addElement('input', 'section', number);
-        obj.setAttr('input', 'checkbox', 'type', number);
-        obj.setAttr('input', 'option' + number, 'name', number);
-        obj.setAttr('input', 'a' + number, 'value', number);
-        obj.addText('Вариант ответа №'+(a+1), 'section', number);
-        
-    };
+	obj.addElement('li','ol', 0);
+
+	obj.addElement('h3', 'li', i);
+	obj.setContent('h3', 'Вопрос №'+(i+1), i);
+
+		for (var a = 0; a < 3; a++) {
+			var number = 3*i+a;
+
+			obj.addElement('div', 'li', i);
+
+			obj.addElement('section', 'div', number);
+			obj.setAttr('section', 'margin-left: 20px', 'style', number);
+			obj.addClass('section', 'checkbox', number);
+
+			obj.addElement('input', 'section', number);
+			obj.setAttr('input', 'checkbox', 'type', number);
+			obj.setAttr('input', 'option' + number, 'name', number);
+			obj.setAttr('input', 'a' + number, 'value', number);
+
+			obj.addText('Вариант ответа №'+(a+1), 'section', number);
+		};
 };
 
 obj.addElement('button', 'body', 0);
