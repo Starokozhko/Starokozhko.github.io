@@ -7,11 +7,15 @@ $(function(){
 
 //Код для второго задания
 	var $inputs = $('input');
+	// =====================================
+	
 	$inputs.hover(sowHelpd,hideHelpd);
 	var $button = $('button');
+
 	$button.on('click', function(){
 		$('div.helpd').animate({ opacity: 1, marginRight: '10px'}, 'slow');
 	});
+
 	$button.hover( function() {
 		$(this).css({ background: "linear-gradient(to top, #051368, #596ff7)", color: '#fff'})
 	}, function() {
@@ -32,11 +36,25 @@ $(function(){
 
 //Функция для второго задания
 	function sowHelpd() {
-		$(this).next('div.helpd').animate({ opacity: 1, marginRight: '10px'}, 'slow');
+		
+		var $title = $(this).attr('title');
+		
+		var $mydiv = $('<div>', {
+			class: 'helpd',
+			text: $title
+		});
+		
+		$(this).parent().append($mydiv);
+		$('.helpd').animate({ opacity: 1, marginRight: '10px'}, 'slow');
+		$(this).attr('title','');
 	} 
+
 //Функция для второго задания
 	function hideHelpd() {
-		$(this).next('div.helpd').animate({ opacity: 0, marginRight: '0px'}, 'slow');
+		var $texts = $('.helpd').text();
+
+		$(this).attr('title', $texts);
+		$('.helpd').animate({ opacity: 0, marginRight: '0px'}, 'slow', function() {$('.helpd').remove()});
 	}
 
 
