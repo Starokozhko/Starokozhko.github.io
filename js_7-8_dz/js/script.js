@@ -15,14 +15,17 @@ $(function(){
 	};
 	var $mydiv1 = $('<div>', {
 		class: 'helpd',
+		id: 'firstName',
 		text: $mytitle.firstName
 	});
 	var $mydiv2 = $('<div>', {
 		class: 'helpd',
+		id: 'lastName',
 		text: $mytitle.lastName
 	});
 	var $mydiv3 = $('<div>', {
 		class: 'helpd',
+		id: 'address',
 		text: $mytitle.address
 	});
 	// console.log($mytitle.first);
@@ -61,13 +64,13 @@ $(function(){
 		
 		var $input = $(this).attr('name');
 		switch ($input) {
-			case 'firstName': $titles = $mytitle.firstName;
+			case 'firstName': 
 												$(this).parent().append($mydiv1);
 				break;
-			case 'lastName': "value", $titles = $mytitle.lastName;
+			case 'lastName': 
 											$(this).parent().append($mydiv2);
 				break;	
-			case 'address': $titles = $mytitle.address;
+			case 'address': 
 											$(this).parent().append($mydiv3);
 				break;
 		}
@@ -84,11 +87,24 @@ $(function(){
 
 //Функция для второго задания
 	function hideHelpd() {
-		var $texts = $('.helpd').text();
+		 
+		var $input = $(this).next().attr('id');
 
+		switch ($input) {
+			case 'firstName': 
+												var $texts = $mytitle.firstName;
+				break;
+			case 'lastName': 
+												var $texts = $mytitle.lastName;
+				break;	
+			case 'address': 
+												var $texts = $mytitle.address;
+				break;
+		}
+
+		console.log($input);
 		$(this).attr('title', $texts);
-		$('.helpd').animate({ opacity: 0, marginRight: '0px'}, 1, function() {$('.helpd').remove()});
+		$(this).next().animate({ opacity: 0, marginRight: '0px'}, 300).remove();
 	}
-
 
 });
