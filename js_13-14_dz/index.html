@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>13-14 JavaScript</title>
+	<script src='js/jquery-3.0.0.min.js'></script>
+	<script src='js/tmpl.js'></script>
+
+	<script src='js/script.js'></script>	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<form action="" class="container" id='qq'>
+		<h2 class="text-center">Тест по програмированию</h2>
+		<ol class="listQustions">
+
+
+
+		</ol>
+	</form> 
+	<button type="submit" class="btn btn-primary center-block btn-lg">Проверить мои результаты</button>
+
+	<script type="text/html" id="template">
+
+		
+		<% for (var i = 1; i < questionsngth; i++){ %>
+			<li>
+				<h3>Вопрос: <%=  questions.question[i]; %></h3>
+				<div>
+					<section class="checkbo"><input type="checkbox" name="options1" value="a1"><%= questions.answer[i]1; %></section>
+				</div>
+				<div>
+					<section class="checkbox"><input type="checkbox" name="options2" value="a2"><%= questions.answer[i]2; %></section>
+				</div>
+				<div>
+					<section class="checkbox"><input type="checkbox" name="options3" value="a3"><%= questions.answer[i]3; %></section>
+				</div>
+				<div>
+					<section class="checkbox"><input type="checkbox" name="options4" value="a4"><%= questions.answer[i]4; %></section>
+				</div>
+			</li>
+
+			<%  }; %>
+
+		</script>
+
+	</body>
+	</html>
