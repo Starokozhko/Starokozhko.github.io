@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>13-14 JavaScript</title>
+	
 	<script src='js/jquery-3.0.0.min.js'></script>
 	<script src='js/tmpl.js'></script>
 
@@ -12,7 +13,7 @@
 </head>
 <body>
 
-	<form action="" class="container" id='qq'>
+	<form action="" class="container" id="qq">
 		<h2 class="text-center">Тест по програмированию</h2>
 		<ol class="listQustions">
 
@@ -24,26 +25,25 @@
 
 	<script type="text/html" id="template">
 
-		
-		<% for (var i = 1; i < questionsngth; i++){ %>
+<% for (var i = 0; i < Object.keys(questions).length; i++){ %>
+			
 			<li>
-				<h3>Вопрос: <%=  questions.question[i]; %></h3>
+				<h3>Вопрос: <%=  questions[i].question %></h3>
 				<div>
-					<section class="checkbo"><input type="checkbox" name="options1" value="a1"><%= questions.answer[i]1; %></section>
+					<section class="checkbox"><input type="checkbox" name="options1" value="a1"><%= questions[i].answer1 %></section>
 				</div>
 				<div>
-					<section class="checkbox"><input type="checkbox" name="options2" value="a2"><%= questions.answer[i]2; %></section>
+					<section class="checkbox"><input type="checkbox" name="options2" value="a2"><%= questions[i].answer2 %></section>
 				</div>
 				<div>
-					<section class="checkbox"><input type="checkbox" name="options3" value="a3"><%= questions.answer[i]3; %></section>
+					<section class="checkbox"><input type="checkbox" name="options3" value="a3"><%= questions[i].answer3 %></section>
 				</div>
 				<div>
-					<section class="checkbox"><input type="checkbox" name="options4" value="a4"><%= questions.answer[i]4; %></section>
+					<section class="checkbox"><input type="checkbox" name="options4" value="a4"><%= questions[i].answer4 %></section>
 				</div>
 			</li>
 
 			<%  }; %>
-
 		</script>
 
 	</body>
