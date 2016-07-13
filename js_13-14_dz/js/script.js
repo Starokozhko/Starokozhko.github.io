@@ -148,8 +148,8 @@ window.addEventListener("DOMContentLoaded", function() {
 					res.children().remove();
 			}
 
-
-			if(flag == obj.length) {
+console.log(getQuestions.length);
+			if(flag >= getQuestions.length) {
 				addModal("ok");
 
 			}else {
