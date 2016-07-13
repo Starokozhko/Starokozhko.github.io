@@ -12,39 +12,49 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="wraper">
+		<form action="" class="container" id="qq">
+			<h2 class="text-center">Тест по програмированию</h2>
+			<ol class="listQustions">
 
-	<form action="" class="container" id="qq">
-		<h2 class="text-center">Тест по програмированию</h2>
-		<ol class="listQustions">
 
 
+			</ol>
+		</form> 
+		<button type="submit" class="btn btn-primary center-block btn-lg">Проверить мои результаты</button>
 
-		</ol>
-	</form> 
-	<button type="submit" class="btn btn-primary center-block btn-lg">Проверить мои результаты</button>
-
-	<script type="text/html" id="template">
-
-<% for (var i = 0; i < Object.keys(questions).length; i++){ %>
-			
+		<script type="text/html" id="template">
+		</div>
+		<% for (var i = 0; i < Object.keys(questions).length; i++){ %>
+			<% var count = 1; %>
 			<li>
 				<h3>Вопрос: <%=  questions[i].question %></h3>
 				<div>
-					<section class="checkbox"><input type="checkbox" name="options1" value="a1"><%= questions[i].answer1 %></section>
+					<section class="checkbox"><input type="<%= questions[i].type %>" name="<%= questions[i].name %>" value="a"><%= questions[i].answer1 %></section>
 				</div>
 				<div>
-					<section class="checkbox"><input type="checkbox" name="options2" value="a2"><%= questions[i].answer2 %></section>
+					<section class="checkbox"><input type="<%= questions[i].type %>" name="<%= questions[i].name %>" value="b"><%= questions[i].answer2 %></section>
 				</div>
 				<div>
-					<section class="checkbox"><input type="checkbox" name="options3" value="a3"><%= questions[i].answer3 %></section>
+					<section class="checkbox"><input type="<%= questions[i].type %>" name="<%= questions[i].name %>" value="c"><%= questions[i].answer3 %></section>
 				</div>
 				<div>
-					<section class="checkbox"><input type="checkbox" name="options4" value="a4"><%= questions[i].answer4 %></section>
+					<section class="checkbox"><input type="<%= questions[i].type %>" name="<%= questions[i].name %>" value="d"><%= questions[i].answer4 %></section>
 				</div>
 			</li>
 
-			<%  }; %>
+			<% count++ }; %>
 		</script>
 
-	</body>
-	</html>
+		<div class="wraper-modal">
+			<div class="modals">
+				<h2>Результаты теста:</h2>
+				<img src="img/closed.gif"  alt="">
+				<div id="result">
+					<!-- <h1>Поздравляем!!!</h1>
+					<h3>Вы здали тест</h3></div> -->
+				</div>
+			</div>
+
+		</body>
+		</html>
