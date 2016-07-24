@@ -22,16 +22,26 @@ $(function() {
 		}
 	}
 
-   	worker.__proto__ = Human;
-    student.___proto__ = Human;
+	worker.__proto__ = Human;
+	student.___proto__ = Human;
 
-    var alex = worker;
-    alex.name = 'Alex';
-    alex.age = 32;
+	var alex = worker;
+	alex.name = 'Alex';
+	alex.age = 32;
 
-    console.log('alex.name: ' + alex.name);
-    console.log('alex.age: ' + alex.age);
-    console.log('alex.male: ' + alex.male);
+	var maria = worker;
+	maria.name = 'Maria';
+	maria.age = 27;
+	maria.male = 'woman'
+
+
+	console.log('alex.name: ' + alex.name);
+	console.log('alex.age: ' + alex.age);
+	console.log('alex.male: ' + alex.male);
+
+	console.log('maria.name: ' + maria.name);
+	console.log('maria.age: ' + maria.age);
+	console.log('maria.male: ' + maria.male);
 
 
 
@@ -44,14 +54,14 @@ $(function() {
 	s.parentNode.insertBefore(gcse, s);
 
 	function search(){
-var $searchText = $('#searchText').val();
+		var $searchText = $('#searchText').val();
 
 		$.ajax({
 			url: 'https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=30&q=' + $searchText,
 			dataType: "jsonp",
 			success: function(data) {
 				var htmlText = $("#templite").html();
-				 $('.result').html(tmpl(htmlText, data));
+				$('.result').html(tmpl(htmlText, data));
 				console.log(data);
 
 			}
