@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 800px;
+	margin: 20px auto;
+}
+form {
+	width: 500px;
+	margin: 0 auto;
+}
+.result {
+	padding: 20px;
+}
+.item {
+	width: 120px;
+	height: 100px;
+	float: left;
+	overflow: hidden;
+}
+.item img {
+	width: 110px;
+	height: 90px;
+}
