@@ -1,0 +1,9 @@
+@import "style.css";
+
+p {
+	color: red;
+	padding: 20px;
+}
+.grunt {
+	display: block;
+}

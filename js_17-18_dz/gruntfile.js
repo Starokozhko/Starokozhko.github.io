@@ -17,7 +17,7 @@
  			},
  			target: {
  				files: {
- 					'css/dist/style.css': ['css/src/*.css']
+ 					'css/dist/style.css': ['css/src/style_grunt.css']
  				}
  			}
 
@@ -28,13 +28,13 @@
  				cwd: 'css/dist/',
  				src: ['*.css', '!*.min.css'],
  				dest: 'css/',
- 				ext: '.min.css'
+ 				ext: '.css'
  			}
  		},
  		uglify: {
  			dist: {
  				src: ['js/dist/script.min.js'],
- 				dest: 'js/dist/script.min.js'
+ 				dest: 'js/dist/script.js'
  			}
  		},
  		watch: {
@@ -53,5 +53,5 @@
  	grunt.loadNpmTasks('grunt-contrib-watch');
  	grunt.loadNpmTasks('grunt-csso');
 
- 	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'csso']);
+ 	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'csso', 'watch']);
  };
