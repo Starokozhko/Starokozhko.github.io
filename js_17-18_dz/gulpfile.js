@@ -8,10 +8,10 @@ pump = require('pump');
 
 
 gulp.task('scripts', function() {
-	return gulp.src('css/src/{style.css,style_gulp.css}')
+	return gulp.src('src/css/src/{style.css,style_gulp.css}')
 	.pipe(concat('style.css'))
 	.pipe(cleanCSS({compatibility: 'ie8'}))
-	.pipe(gulp.dest('css/'));
+	.pipe(gulp.dest('bild/css/'));
 });
 // gulp.task('minify:css', function() {
 // 	return gulp.src('css/dist/*.css')
@@ -20,16 +20,16 @@ gulp.task('scripts', function() {
 // });
 
 gulp.task('scriptsJS', function() {
-	return gulp.src('js/src/*.js')
+	return gulp.src('src/js/src/*.js')
 	.pipe(concat('script.js'))
-	.pipe(gulp.dest('js/dist/'));
+	.pipe(gulp.dest('src/js/dist/'));
 });
 
 gulp.task('compress', ['scriptsJS'], function (cb) {
 	pump([
-		gulp.src('js/dist/*.js'),
+		gulp.src('src/js/dist/*.js'),
 		uglify(),
-		gulp.dest('js/')
+		gulp.dest('bild/js/')
 		],
 		cb
 		);

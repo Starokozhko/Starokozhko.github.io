@@ -6,8 +6,8 @@
  				separator: ';'
  			},
  			dist: {
- 				src: ['js/src/*.js'],
- 				dest: 'js/dist/script.min.js'
+ 				src: ['src/js/src/*.js'],
+ 				dest: 'src/js/dist/script.min.js'
  			}
  		},
  		cssmin: {
@@ -17,7 +17,7 @@
  			},
  			target: {
  				files: {
- 					'css/dist/style.css': ['css/src/style_grunt.css']
+ 					'src/css/dist/style.css': ['src/css/src/style_grunt.css']
  				}
  			}
 
@@ -25,21 +25,21 @@
  		csso: {
  			dynamic_mappings: {
  				expand: true,
- 				cwd: 'css/dist/',
+ 				cwd: 'src/css/dist/',
  				src: ['*.css', '!*.min.css'],
- 				dest: 'css/',
+ 				dest: 'bild/css/',
  				ext: '.css'
  			}
  		},
  		uglify: {
  			dist: {
- 				src: ['js/dist/script.min.js'],
- 				dest: 'js/dist/script.js'
+ 				src: ['src/js/dist/script.min.js'],
+ 				dest: 'bild/js/script.js'
  			}
  		},
  		watch: {
  			scripts: {
- 				files: ['js/src/*.js'],
+ 				files: ['src/js/src/*.js'],
  				tasks: ['concat','uglify'],
  				options: {
  					spawn: false,
