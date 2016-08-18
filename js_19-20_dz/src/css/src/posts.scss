@@ -1,0 +1,63 @@
+.posts {
+	padding: 53px 0 0;
+	min-height: 264px;
+	.post	{
+		width: 352px;	
+		float: left;
+		margin-right: 34px;
+		h1 {
+			float: left;
+			margin-top: -15px;
+			@include ubM(90, #e9e9ea);
+			height: 100%;
+		}
+		.post-wrap {
+			float: right;
+			width: 230px;
+			h2 {
+				@include ubM(20, #000);
+				margin-bottom: 19px;
+			}
+			p {
+				font-family: Arial sans-serif;
+				font-size: 16px;
+				color: #8a8a8a;
+				line-height: 20px;
+				height: 60px;
+				overflow: hidden;
+				margin-bottom: 4px;
+				span {
+					display: none;
+				}
+			}
+			.readmore {
+				@include ubM(13, #000);
+				text-decoration: none;
+				text-transform: capitalize;
+				margin: 15px 0;
+				float: left;
+			}
+			.readmore:after {
+				content: '';
+				float: right;
+				display: block;
+				margin: 3px 0 0 5px;
+				width: 10px;
+				height: 9px;
+				background: url(../img/arrow.png) no-repeat 0 0;
+			}
+			.readmore:hover {
+				color: #248cec;
+			}
+			.post-icon1 {
+				@include icons("post-icon.png", 32, 0, 15);
+			}
+			.post-icon2 {
+				@include icons("post-icon.png", 32, 1, 15);
+			}
+			.post-icon3 {
+				@include icons("post-icon.png", 32, 2, 15);
+			}
+		}
+	}
+}

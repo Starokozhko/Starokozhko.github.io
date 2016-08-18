@@ -1,0 +1,4 @@
+$ cat .gitignore
+*node_modules
+*files
+*.sass-cache

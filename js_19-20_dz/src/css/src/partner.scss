@@ -1,0 +1,27 @@
+.partner {
+	width: 100%;
+	height: 240px;
+	background-color: #fff;
+	.partner-logos {
+		float: left;
+		margin: 80px 20px;
+	}
+	.logos1 {
+		@include picture('partners', 'patrner1.png', 143, 62);
+	}
+	.logos2 {
+		@include picture('partners', 'patrner2.png', 143, 62);
+	}
+	.logos3 {
+		@include picture('partners', 'patrner3.png', 184, 64);
+	}
+	.logos4 {
+		@include picture('partners', 'patrner4.png', 143, 62);
+	}
+	.logos5 {
+		@include picture('partners', 'patrner5.png', 143, 62);
+	}
+	.logos6 {
+		@include picture('partners', 'patrner6.png', 143, 62);
+	}
+}

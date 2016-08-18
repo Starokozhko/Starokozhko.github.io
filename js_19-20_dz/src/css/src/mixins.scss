@@ -1,0 +1,68 @@
+ @mixin ubM ($size, $color){
+ 	font-family: 'ubuntumedium';
+ 	font-size: $size + px;
+ 	color: $color;
+ };
+
+ @mixin text2($size, $tramsform, $decor: none){
+ 	font-family: 'ubuntulight';
+ 	text-transform: $tramsform;
+ 	font-size: $size;
+ 	text-decoration: $decor;
+ };
+
+ @mixin text3($size, $tramsform, $decor: none){
+ 	font-family: 'ubuntu_condensedregular';
+ 	text-transform: $tramsform;
+ 	font-size: $size;
+ 	text-decoration: $decor;
+ };
+
+
+ @mixin sprite($name1, $name2, $name3, $name4,  $name5, $step) {
+ 	
+ 	.#{$name1} {
+ 		background-position: 0 0;
+ 	}
+ 	.#{$name2} {
+ 		background-position: 0 (0 - $step);
+ 	}
+ 	.#{$name3} {
+ 		background-position: 0 (0 - $step * 2);
+ 	}
+ 	.#{$name4} {
+ 		background-position: 0 (0 - $step * 3);
+ 	}
+ 	.#{$name5} {
+ 		background-position: 0 (0 - $step * 4);
+ 	}
+ 	
+ 	.#{$name1}:hover  {
+ 		background-position: - $step 0;
+ 	}
+ 	.#{$name2}:hover  {
+ 		background-position: -$step (0 - $step);
+ 	}
+ 	.#{$name3}:hover  {
+ 		background-position: -$step (0 - $step * 2);
+ 	}
+ 	.#{$name4}:hover  {
+ 		background-position: -$step (0 - $step * 3);
+ 	}
+ 	.#{$name5}:hover  {
+ 		background-position: -$step (0 - $step * 4);
+ 	}
+ };
+
+ @mixin icons($url, $size, $value, $margin){
+ 	width: $size + px;
+ 	height: $size + px;
+ 	background: url(../img/#{$url}) no-repeat;
+ 	background-position: (-$size * $value) + px 0;
+ 	margin-bottom: $margin + px;
+ };
+ @mixin picture($folder, $url, $x, $y) {
+ 	width: $x + px;
+ 	height: $y + px;
+ 	background: url("../img/#{$folder}/#{$url}") no-repeat center center;
+ }

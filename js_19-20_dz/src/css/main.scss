@@ -1,0 +1,129 @@
+
+
+@import 'src/reset.scss';
+@import 'src/stylesheet.scss';
+@import 'src/mixins.scss';
+
+ $wrapperWidth: 1160px;
+ $navbgcolor: #2a2d32;
+ $hoverlinkcolor: #f4b60d;
+ $colorblue: #248cec;
+
+ .wrapper {
+ 	width: $wrapperWidth;
+ 	margin: 0 auto;
+ }
+ .top {
+ 	padding-top: 38px;
+ 	padding-bottom: 38px;
+ 	width: 100%;
+ 	.logo {
+ 		float: left;
+ 		width: 220px;
+ 		text-decoration: none;
+ 		.logo-img {
+ 			background: url(../img/logo.png) no-repeat;
+ 			width: 36px;
+ 			height: 36px;
+ 			float: left;
+ 			margin: 0 10px 0 4px;
+ 		}
+ 		h2 {
+ 			font-family: 'ubuntumedium';
+ 			font-size: 30px;
+ 			color: #434343;
+ 			line-height: 18px;
+ 			span {
+ 				@include text2(12px, uppercase);
+ 				letter-spacing: 3.5px;				
+ 				color: #434343;
+ 			}
+ 		}
+ 	}
+ 	.linksIcon {
+ 		float: right;
+ 		margin-top: 11px;
+ 		a {
+ 			display: inline-block;
+ 			width: 16px;
+ 			height: 16px;
+ 			background: url(../img/icon-links.png) no-repeat;
+ 			margin-right: 3px;
+ 			margin-left: 10px;
+ 		}
+
+ 		@include  sprite(fb, twit, rss, in, skype, 16px);
+ 	}
+ }
+ .main {
+ 	clear: both;
+ 	width: 100%;
+ 	height: 55px;
+ 	margin: 35px 0;
+ 	background-color: $navbgcolor;
+ 	ul {
+ 		float: left;
+ 		.selected {
+ 			background-color: $colorblue;
+ 			a:hover {
+ 				color: #fff;
+ 			}
+ 		}
+ 		li {
+ 			display: inline-block;
+ 			height: 55px;
+ 			border-right: 1px solid black;
+ 			a {
+ 				@include text3(14px, uppercase);
+ 				color: #fff;
+ 				width: inherit;
+ 				height: 55px;
+ 				line-height: 55px;
+ 				padding: 0 38px;
+ 				display: block
+ 			}
+ 			a:hover {
+ 				color: $hoverlinkcolor;
+ 			}
+ 		}
+ 	}
+ 	.search {
+ 		float: right;
+ 		margin: 8px;
+ 		width: 240px;
+ 		height: 38px;
+ 		.search-input {
+ 			border: 1px solid black;
+ 			background-color: #35383c; 			
+ 			padding-left: 15px;
+ 			height: 36px;
+ 			width: 225px;
+ 			color: #626466;
+ 			font-size: 12px;
+ 		}
+ 		.search-input:focus {
+ 			outline: none;
+ 			border: 1px solid gray;
+ 		}
+ 		.search-btn {
+ 			position: relative;
+ 			top: -27px;
+ 			right: -217px;
+ 			background: url(../img/search.png) no-repeat;
+ 			background-position: 0 0;
+ 			width: 14px;
+ 			height: 14px;
+ 			border: none;
+ 			cursor: pointer;
+ 		}
+ 		.search-btn:focus {
+ 			outline: none;
+ 		}
+ 	}
+ }
+ @import 'src/slider.scss';
+ @import 'src/posts.scss';
+ @import 'src/servis.scss';
+ @import 'src/main.scss';
+ @import 'src/partner.scss';
+ @import 'src/footer.scss';
