@@ -79,19 +79,23 @@ spanAdd();
 
 var data = $.ajax({
 	async: false,
-	url: '../data.json',
-	dataType: 'json'
+	url: 'data.json',
+	crossDomain: true,
+	dataType: 'json',
+	success: function(data){
+		var skills = _.sortBy(_.uniq(_.flatten(_.map(data, 'skills'))));
+		console.log(skills);
+
+		var namesCountFriends = _.reverse(_.map(_.sortBy(data, ['friends']), 'name'));
+		console.log(namesCountFriends);
+
+		var friends = _.uniq(_.map(_.flatten(_.map(data, 'friends')), 'name'));
+		console.log(friends);
+	}
 }).responseJSON;
 
-// console.log(data);
+console.log(data);
 
-var skills = _.sortBy(_.uniq(_.flatten(_.map(data, 'skills'))));
-console.log(skills);
 
-var namesCountFriends = _.reverse(_.map(_.sortBy(data, ['friends']), 'name'));
-console.log(namesCountFriends);
-
-var friends = _.uniq(_.map(_.flatten(_.map(data, 'friends')), 'name'));
-console.log(friends);
 
 });
