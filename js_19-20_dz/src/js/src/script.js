@@ -93,7 +93,7 @@ var data = $.ajax({
 	}
 }).responseJSON;
 
-console.log(data);
+// console.log(data);
 
 
 
