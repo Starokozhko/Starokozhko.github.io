@@ -80,7 +80,6 @@ spanAdd();
 var data = $.ajax({
 	async: false,
 	url: 'data.json',
-	crossDomain: true,
 	dataType: 'json',
 	success: function(data){
 		var skills = _.sortBy(_.uniq(_.flatten(_.map(data, 'skills'))));
