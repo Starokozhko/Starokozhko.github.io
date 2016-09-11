@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+}
+.wrapper {
+	width: 400px;
+	height: 200px;
+	border-radius: 10px;
+	border: 1px solid gray;
+	margin: 40px auto;
+	padding: 30px;
+	box-shadow: 0 0 5px gray;
+	background: linear-gradient( to top, #f1da36, #fff38a );
+}
+h2 {
+	text-align: center;
+}
+.item-list {
+	margin-left: 10px;
+}
+.item-list li {
+	margin: 5px;
+	list-style-type: decimal;
+}
+
+.controlls {
+	margin-top: 20px;
+}
+.item-value {
+	height: 30px;
+	width: 300px;
+	border-radius: 3px;
+	border: 1px solid #999;
+	padding-left: 5px;
+	color: #999;
+}
+button {
+	line-height: 20px;
+	height: 32px;
+	width: 80px;
+	background: linear-gradient(to top, #6d8eeb, #1405f5);
+	color: #fff;
+	border: 1px solid #999;
+	border-radius: 3px;
+}
+.item-text {
+	background-color: transparent;
+	width: 320px;
+	border: 0;
+	cursor: default;
+	outline-width: 0;
+	font-family: Tahoma;
+	padding-left: 5px;
+	border-radius: 3px;
+	height: 20px;
+}
+.item-text:focus {
+	background-color: rgba(0,0,0,0.1);
+}
+.item-btn {
+	cursor: pointer;
+	float: right;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.item-fix {
+	background: url(../img/fix.png);
+	background-position: 0 0;
+	display: block;
+}
+.item-done {
+	display: none;
+	background: url(../img/done.png);
+}
+.item-delete {
+	background: url(../img/delete.png);
+	background-position: 0 0;
+}
+.item-list li:hover .item-delete,
+.item-list li:hover .item-fix {
+	background-position: 20px 0;
+	}

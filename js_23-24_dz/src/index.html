@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DZ 23-24 JavaScript</title>
+	<script data-main="js/main" src="js/require.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<script type="text/template" id="wrapper-template">
+		
+		<div class="wrapper">
+			<h2>To Do List:</h2>
+			<div class="controlls">
+				<input type="text" class="item-value">
+				<button class="item-add">Add</button>
+			</div>
+			<ul class="item-list">
+
+			</ul>
+		</div>
+		
+	</script>
+
+	<script type="text/template" id="list-tamplate">
+
+		<% for(var i = 0; i < data.length; i++) { %>
+			<div>
+				<li><input data-id="<%= data[i] %>" value="<%= data[i] %>" class="item-text" disabled>
+					<span data-value="<%= data[i] %>" class="item-btn item-delete"> </span> 
+					<span data-value="<%= data[i] %>" class="item-btn item-fix"> </span>
+					<span data-value="<%= data[i] %>" class="item-btn item-done"> </span>
+				</li>
+			</div>
+			<% } %>
+
+		</script>
+
+	</body>
+	</html>
