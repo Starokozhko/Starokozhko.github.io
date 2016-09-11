@@ -4,7 +4,7 @@
 	function Modul(){
 	
 			var self = this;
-			self.data = ['learn javascript', 'lerarn html', 'make coffe'];
+			self.data = [];
 
 			self.addItem = function (item) {
 				if (item.length === 0) {

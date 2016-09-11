@@ -28,11 +28,12 @@
        	self.elements.listContainer.html(list);
        	return true;
        };
+
        function getElement (val) {
        	var str = '[data-id = ' + '"' + val + '"]';
        	var element = $(str);
        	return element;
-       }
+       };
 
        self.fixText = function (val) {
        	var element = getElement(val);
@@ -44,7 +45,7 @@
        	element.attr('disabled', true); //
        	element.blur();
        }
-     }
+     };
 
      self.change = function (val) {
      	var element = getElement(val);
@@ -56,12 +57,13 @@
      		element.next().next().css('display','none');
      		element.next().next().next().css('display','block');
      	}
-     }
+     };
+
      self.doneFix = function (val) {
 
      	var element = getElement(val);
 
-     }
+     };
 
      init();
 

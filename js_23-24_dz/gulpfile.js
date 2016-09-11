@@ -67,23 +67,11 @@ gulp.task('html:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('es6', function () {
-    gulp.src(path.src.jsEs6)
-        .pipe(sourcemaps.init())
-        // .pipe(babel({
-        //     presets: ['es2015']
-        // }))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(path.build.jsEs6));
-});
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) 
         .pipe(rigger()) 
         .pipe(sourcemaps.init()) 
-        .pipe(babel({
-            presets: ['es2015']
-        }))
         .pipe(sourcemaps.write()) 
         .pipe(sourcemaps.init()) 
         .pipe(uglify()) 
