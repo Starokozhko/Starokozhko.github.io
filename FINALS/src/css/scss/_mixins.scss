@@ -1,0 +1,27 @@
+$colorW: #fff;
+$colorC: #ff4e50;
+$colorG: #333333;
+$colorGB: #666666;
+$colorGL: #cccccc;
+$colorGr: #1cd7ad;
+$colorO: #ffa507;
+$colorB: #4e73db;
+
+@mixin col ( $color ){
+	color: $color;
+};
+@mixin bgc ( $color ){
+	background-color: $color;
+};
+@mixin br-r ($value){
+	 -webkit-border-radius: $value;
+     -moz-border-radius: $value;
+      -ms-border-radius: $value;
+          border-radius: $value;
+}
+@mixin br($px,$color) {
+	border: $px+px solid $color;
+}
+@mixin bgi($url, $first){
+    background: url(../img/#{$first}#{$url}) no-repeat;
+}
