@@ -792,25 +792,25 @@ section:after, footer:after {
 
 /* line 2, scss/_sprite.scss */
 .img1 {
-  background-image: url(../../img/partners/sprite.png);
+  background-image: url(../img/partners/sprite.png);
   background-position: 0px 0px;
 }
 
 /* line 7, scss/_sprite.scss */
 .img2 {
-  background-image: url(../../img/partners/sprite.png);
+  background-image: url(../img/partners/sprite.png);
   background-position: -125px 0px;
 }
 
 /* line 12, scss/_sprite.scss */
 .img3 {
-  background-image: url(../../img/partners/sprite.png);
+  background-image: url(../img/partners/sprite.png);
   background-position: 0px -126px;
 }
 
 /* line 17, scss/_sprite.scss */
 .img4 {
-  background-image: url(../../img/partners/sprite.png);
+  background-image: url(../img/partners/sprite.png);
   background-position: -250px 0px;
 }
 
