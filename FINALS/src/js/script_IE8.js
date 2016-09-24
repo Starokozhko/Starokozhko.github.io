@@ -1,4 +1,7 @@
-search();
+(function(){
+// search();
+
+
 // init Isotope
 // var grid = document.querySelector('.grid');
 
@@ -14,93 +17,113 @@ search();
 
 
 // slider Start
-var arrowRight = document.querySelectorAll('steps-block-arrow-right');
 
-var arrowLeft = document.querySelectorAll('steps-block-arrow-left');
+for(var i = 1; i <= 3; i++) {
+	var strRequest = 'r' + i;
+	var strRequest2 = 'l' + i;
+	var arrowRight = document.getElementById(strRequest);
 
-for(var i = 0; i < arrowLeft.length ; i++) { // добавление события клик на все стрелки
-	arrowRight[i].addEventListener('click', nextRight);
-	arrowLeft[i].addEventListener('click', nextLeft);
+	var arrowLeft = document.getElementById(strRequest2);
+
+	arrowRight.attachEvent('onclick', nextRight);
+	arrowLeft.attachEvent('onclick', nextLeft);
+
 }
 
-function nextRight() { // переход к следующему слайду
-	var blockContent = this.parentNode.parentNode.lastChild.previousElementSibling;
 
-	var spansR = blockContent.querySelectorAll('span-wrap');
-	
+function nextRight(event) { // переход к следующему слайду
+	// for(var key in e) { console.log(key);}
+	event = event || fixEvent.call(this, window.event);
+	event.currentTarget = this;
+	event.target = event.srcElement;
 
-	for(var i = 0; i < spansR.length; i++) {
-		if(spansR[i].classList.contains('active')){
-			spansR[i].classList.remove('active');
-			
-			var str = '';
-
-			switch(i) { //  для изменения позиции спрайта
-				case 0: str = '-300px 0'; 
-				break;
-				case 1: str = '-600px 0';
-				break;
-				case 2: str = '0 0';
-				break;
-			}
-			blockContent.parentNode.style.backgroundPosition = str;
-
-			if(i >= (spansR.length - 1)) {
-				var q  = 0;
-				spansR[q].classList.add('active');
-				return;
-			} else {
+	var blockContent = event.target.parentNode.parentNode.lastChild;
 
 
-				var q = i + 1 ;
-				spansR[q].classList.add('active');
-				break;
-			}
-		}
-	}
-};
+	for(var i = 1; i < blockContent.children.length; i++) {
 
-function nextLeft() { // переход к предыдущему слайду
-	var blockContent = this.parentNode.parentNode.lastChild.previousElementSibling;
-
-	var spansL = blockContent.querySelectorAll('span-wrap');
-
-	
-
-	for(var i = 0; i < spansL.length; i++) {
 
 		var str = '';
 
-			switch(i) {  //  для изменения позиции спрайта
-				case 0: str = '-600px 0'; 
-				break;
-				case 1: str = '0 0';
-				break;
-				case 2: str = '-300px 0';
-				break;
-			}
-			blockContent.parentNode.style.backgroundPosition = str;
-			
+				switch(i) { //  для изменения позиции спрайта
+					case 1: str = '-300px 0'; 
+					break;
+					case 2: str = '-600px 0';
+					break;
+					case 3: str = '0 0';
+					break;
+				}
 
-			if(spansL[i].classList.contains('active')){
-				spansL[i].classList.remove('active');
+				blockContent.parentElement.style.backgroundPosition = str;
 
-				if(i == 0) {
-					var q  = (spansL.length - 1);
-					spansL[q].classList.add('active');
-					return;
-				} else {
-					var q = i - 1 ;
-					spansL[q].classList.add('active');
+
+				if(blockContent.children[i].className == 'span-wrap active'){
+
+					if(i == (blockContent.children.length - 1)){
+						blockContent.children[i].className = 'span-wrap';
+						var w = 1;
+
+						blockContent.children[w].className = 'span-wrap active';	
+						break;
+					}
+					blockContent.children[i].className = 'span-wrap';
+
+					var w = + i + 1;
+
+					blockContent.children[w].className = 'span-wrap active';
+
 					break;
 				}
 			}
-		}
-	};
+		};
+
+function nextLeft(event) { // переход к предыдущему слайду
+	event = event || fixEvent.call(this, window.event);
+	event.currentTarget = this;
+	event.target = event.srcElement;
+
+	var blockContent = event.target.parentNode.parentNode.lastChild;
+
+	for(var i = 1; i < blockContent.children.length; i++) {
+	// var spansR = blockContent.children[i];
+
+	var str = '';
+
+				switch(i) {  //  для изменения позиции спрайта
+					case 1: str = '-600px 0'; 
+					break;
+					case 2: str = '0 0';
+					break;
+					case 3: str = '-300px 0';
+					break;
+				}
+
+				blockContent.parentElement.style.backgroundPosition = str;
+
+
+				if(blockContent.children[i].className == 'span-wrap active'){
+					if(i == 1 ){ 
+
+						blockContent.children[i].className = 'span-wrap';
+						var w = (blockContent.children.length - 1);
+						blockContent.children[w].className = 'span-wrap active';	
+						break;
+					}
+
+					blockContent.children[i].className = 'span-wrap';
+					var w = + i - 1;
+					blockContent.children[w].className = 'span-wrap active';
+
+					break;
+				}
+			}
+		};
 // slider END
 
 
 // search 
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function search(){
 	console.log('OK!!');
 	var valArr = document.getElementById('serchVal');
@@ -112,47 +135,74 @@ function search(){
 		var valSearch = '';
 	}
 
-		function getXmlHttp(){
-			var xmlhttp;
-			try {
-				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-			} catch (e) {
-				try {
-					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-				} catch (E) {
-					xmlhttp = false;
-				}
-			}
-			if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
-				xmlhttp = new XMLHttpRequest();
-			}
-			return xmlhttp;
-		}
 
-crossDomainAjax('http://www.somecrossdomaincall.com/?blah=123', function (data) {
-    alert('Yes');
-});
+// **********
+// var $searchText = $('#searchText').val();
 
-function crossDomainAjax (url, successCallback) {
+// 		$.ajax({
+// 			url: 'https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=7&q=' + $searchText,
+// 			dataType: "jsonp",
+// 			success: function(data) {
+// 				// var htmlText = $("#templite").html();
+// 				// $('.result').html(tmpl(htmlText, data));
+
+// 				for(var key in data.hits[0]) { console.log(key);}
+// 				console.log(data);
+
+// 			}
+
+// 		});
+// *******END*******
+
+
+
+
+		// function getXmlHttp(){
+		// 	var xmlhttp;
+		// 	try {
+		// 		xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+		// 	} catch (e) {
+		// 		try {
+		// 			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		// 		} catch (E) {
+		// 			xmlhttp = false;
+		// 		}
+		// 	}
+		// 	if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+		// 		xmlhttp = new XMLHttpRequest();
+		// 	}
+		// 	return xmlhttp;
+		// }
+
+		// crossDomainAjax('https://api.riffsy.com/v1/search?tag=<query>&key=LIVDSRZULELA', function (data) {
+		// 	alert('Yes');
+		// });
+
+// 		function crossDomainAjax (url, successCallback) {
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
     // IE8 & 9 only Cross domain JSON GET request
-var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+    var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
-var xhr = new XHR();
+    var xhr = new XHR();
+    // for(var key in xhr) { console.log(key);}
+    // console.log(xhr);
+// 				// (2) запрос на другой домен :)
+			xhr.onload = function() {
+				alert( this.responseText );
+			}
+			xhr.open("POST", "https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=7&q=");
+			xhr.send('q=' + valSearch); 
 
-// (2) запрос на другой домен :)
-xhr.open('GET', 'http://anywhere.com/request', true);
 
-xhr.onload = function() {
-  alert( this.responseText );
-}
+// 			xhr.onerror = function() {
+// 				alert( 'Ошибка ' + this.status );
+// 			}
 
-xhr.onerror = function() {
-  alert( 'Ошибка ' + this.status );
-}
-
-xhr.send(); 
-};
+// };
 
 //     // IE7 and lower can't do cross domain
 //     else if (navigator.userAgent.indexOf('MSIE') != -1 &&
@@ -187,7 +237,9 @@ xhr.send();
 		// 			}
 
 
-				};
+	};
 // };
 
-				document.getElementById('search').attachEvent('onclick', search);
+document.getElementById('search').attachEvent('onclick', search);
+
+})();

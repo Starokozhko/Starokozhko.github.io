@@ -12,22 +12,24 @@
       document.createElement('section');
       document.createElement('footer');
   </script>
-
+<script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
   <link rel="stylesheet" href="css/style_IE8.css">
   <![endif]-->
   <!--[if !IE]><!-->
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media-queries.css">
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/script.js"></script> 
+
+  
   <!--<![endif]-->
 	<!--[if lte IE 8]>
   <script src="js/respond.min.js"></script>
   <![endif]-->
-<!--
-  <script src="js/imagesloaded.pkgd.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/script.js"></script> 
--->
+
+
 </head>
 <body>
 	<header>
@@ -50,8 +52,8 @@
 			<h3 class="steps-h3">How Urlaubsglück works?</h3>
 			<div class="steps-block step1">
 				<div class="steps-block-arrow">
-					<span class="steps-block-arrow-left"></span>
-					<span class="steps-block-arrow-right"></span>
+					<span class="steps-block-arrow-left" id="l1"></span>
+					<span class="steps-block-arrow-right" id="r1"></span>
 				</div>
 				<div class="clearfix"></div>
 				<div class="steps-block-content">
@@ -72,8 +74,8 @@
 			</div>
 			<div class="steps-block step2">
 				<div class="steps-block-arrow">
-					<span class="steps-block-arrow-left"></span>
-					<span class="steps-block-arrow-right"></span>
+					<span class="steps-block-arrow-left" id="l2"></span>
+					<span class="steps-block-arrow-right" id="r2"></span>
 				</div>
 				<div class="clearfix"></div>
 				<div class="steps-block-content">
@@ -94,8 +96,8 @@
 			</div>
 			<div class="steps-block step3">
 				<div class="steps-block-arrow">
-					<span class="steps-block-arrow-left"></span>
-					<span class="steps-block-arrow-right"></span>
+					<span class="steps-block-arrow-left" id="l3"></span>
+					<span class="steps-block-arrow-right" id="r3"></span>
 				</div>
 				<div class="clearfix"></div>
 				<div class="steps-block-content">

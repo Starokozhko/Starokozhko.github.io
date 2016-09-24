@@ -239,13 +239,16 @@ section, footer {
 //partner
 .partner-block {
 	overflow: hidden;
+	@include flexbox();
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 .partner-block-item {
 	width: 220px;
 	position: relative;
-	float: left;
+	// float: left;
+	// margin-left: 20px;
 	text-align: center;
-	margin-left: 20px;
 }
 .partner-block-item:first-child {
 	margin-left: 0;

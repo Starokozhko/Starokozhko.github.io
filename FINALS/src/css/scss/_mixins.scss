@@ -25,3 +25,10 @@ $colorB: #4e73db;
 @mixin bgi($url, $first){
     background: url(../img/#{$first}#{$url}) no-repeat;
 }
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
