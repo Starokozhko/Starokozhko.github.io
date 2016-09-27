@@ -26,14 +26,14 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/*.js',
-        style: 'src/css/main.scss',
+        style: 'src/css/*.css',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        style: 'src/css/**/*.scss',
+        style: 'src/css/*.css',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -84,7 +84,7 @@ gulp.task('sprite', function() {
 
 
 gulp.task('html:build', function () {
-    gulp.src([path.src.html]) 
+    gulp.src(path.src.html) 
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
@@ -92,7 +92,7 @@ gulp.task('html:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js)
-        .pipe(concat('main.js')) 
+        // .pipe(concat('main.js')) 
         .pipe(rigger()) 
         .pipe(sourcemaps.init()) 
         .pipe(uglify()) 

@@ -1,18 +1,9 @@
  window.onload = function(){
  	'use strict';
+
  	search();
-// init Isotope
-var grid = document.querySelector('.grid');
 
-var msnry = new Masonry( grid, {
-	itemSelector: '.grid-item',
-	columnWidth: '.grid-item'
-});
 
-imagesLoaded( grid ).on( 'progress', function() {
-  // layout Masonry after each image loads
-  msnry.layout();
-});
 
 
 // slider Start
@@ -105,55 +96,69 @@ function nextLeft() { // переход к предыдущему слайду
 // search 
 function search(){
 
-		var valArr = document.getElementById('serchVal');
+	var valArr = document.getElementById('serchVal');
 
-		if (valArr != null) {
-			var valSearch = valArr.value;
+	if (valArr != null) {
+		var valSearch = valArr.value;
 
-		} else {
-				var valSearch = '';
-		}
+	} else {
+		var valSearch = '';
+	}
 
-		function getXmlHttp(){
-			var xmlhttp;
+	function getXmlHttp(){
+		var xmlhttp;
+		try {
+			xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
 			try {
-				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-			} catch (e) {
-				try {
-					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-				} catch (E) {
-					xmlhttp = false;
-				}
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (E) {
+				xmlhttp = false;
 			}
-			if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
-				xmlhttp = new XMLHttpRequest();
-			}
-			return xmlhttp;
 		}
+		if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+			xmlhttp = new XMLHttpRequest();
+		}
+		return xmlhttp;
+	}
 
-		var xmlhttp = getXmlHttp();
+	var xmlhttp = getXmlHttp();
 
-				xmlhttp.open("POST", 'https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=7&q=' + valSearch, true); //q=' + valSearch
+				xmlhttp.open("POST", 'https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=70&q=' + valSearch, true); //q=' + valSearch
 				xmlhttp.send('q=' + valSearch);
 				xmlhttp.onreadystatechange = function() {
-				
-				if (xmlhttp.readyState == 4) {
-					if(xmlhttp.status == 200) {
-						var answerServ = JSON.parse(xmlhttp.responseText);
-						var picture = {};
-			// console.log(answerServ.hits);
-						for(var i = 0; i < answerServ.hits.length; i++) {
+					
+					if (xmlhttp.readyState == 4) {
+						if(xmlhttp.status == 200) {
+							var answerServ = JSON.parse(xmlhttp.responseText);
+							var picture = {};
 
-								document.getElementById('b' + (i +1 )).style.backgroundImage = "url('" + answerServ.hits[i].webformatURL + "')";
-								document.getElementById('b' + (i +1 )).childNodes[1].innerHTML = answerServ.hits[i].tags;
+							for(var i = 0; i < answerServ.hits.length; i++) {
+								var rand = Math.floor(Math.random() * (answerServ.hits.length - 1) + 1);
+
+								document.getElementById('b' + (i +1 )).style.backgroundImage = "url('" + answerServ.hits[rand].webformatURL + "')";
+								document.getElementById('b' + (i +1 )).childNodes[1].innerHTML = answerServ.hits[rand].tags;
 								
 							}	
 						}
 					}
 				}
+
+				// init Isotope
+				var grid = document.querySelector('.grid');
+
+				var msnry = new Masonry( grid, {
+					itemSelector: '.grid-item',
+					columnWidth: '.grid-item'
+				});
+
+				imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
 			}
 
- document.getElementById('search').addEventListener('click', search);
+			document.getElementById('search').addEventListener('click', search);
 // search END
 
 };

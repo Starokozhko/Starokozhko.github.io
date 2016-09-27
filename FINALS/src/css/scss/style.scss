@@ -29,7 +29,7 @@ body {
 }
 header {
 	height: 700px;
-	background: url(../img/header_fon_m.jpg) center  no-repeat;
+	background: url(../img/header_fon.jpg) center  no-repeat;
 	background-size: cover;
 	@include col($colorW);
 }
@@ -132,14 +132,23 @@ section, footer {
 	padding-top: 75px;
 }
 .steps-h3,
-.partner-h3,
-.tile-h3,
-.search-h3 {
+.partner-h3 {
 	@include col($colorG);
-	margin: 0 0 32px 0;
+	margin: 0 0 32px -4px;
 	font: bold 22px "Montserrat";
 	text-align: center;
-	margin-left: -4px;
+}
+.search-h3 {
+	@include col($colorG);
+	margin: 13px 0 32px -4px;
+	font: bold 22px "Montserrat";
+	text-align: center;
+}
+.tile-h3 {
+	@include col($colorG);
+	margin: 0 0 25px -4px;
+	font: bold 22px "Montserrat";
+	text-align: center;
 }
 .steps-block {
 	width: 300px;
@@ -161,14 +170,14 @@ section, footer {
 
 }
 .step1 {
-	@include bgi('step_sprite.jpg', 'steps/');
+	@include bgi('sprite2.jpg', 'steps/');
 }
 .step2 {
-	@include bgi('step_sprite.jpg', 'steps/');
+	@include bgi('sprite2.jpg', 'steps/');
 	background-position: -300px 0;
 }
 .step3 {
-	@include bgi('step_sprite.jpg', 'steps/');
+	@include bgi('sprite2.jpg', 'steps/');
 	background-position: -600px 0;
 
 }
@@ -261,17 +270,43 @@ section, footer {
 @import '_sprite.scss';
 
 
-
 .item-title {
 	font: bold 14px "Montserrat";
 	display: block;
 	@include col($colorG);
-	margin: 14px 0 13px;
+	// margin: 14px 0 13px;
+	margin-top: 15px;
+	margin-bottom: 13px;
+}
+.title1 {
+	margin-left: -16px;
+}
+.title2 {
+	margin-left: -7px;
+}
+.title3 {
+	margin-left: 3px;
+}
+.title4 {
+	margin-left: 13px;
 }
 .item-description {
 	line-height: 16px;
 	display: inline-block;
 }
+.desc1 {
+	margin-left: -13px;
+}
+.desc2 {
+	margin-left: -9px;
+}
+.desc3 {
+	margin-left: 1px;
+}
+.desc4 {
+	margin-left: 12px;
+}
+
 .partner-btn {
 	width: 192px;
 	height: 40px;
@@ -282,7 +317,7 @@ section, footer {
 	@include br(2, $colorC);
 	display: block;
 	text-align: center;
-	margin: 40px auto 0;
+	margin: 39px auto 0;
 	box-sizing: border-box;
 	&:hover {
 		@include col($colorG);
@@ -292,11 +327,9 @@ section, footer {
 // tile
 .tile-wrapper {
 	width: 100%;
-	margin: 34px 0 0 0;
+	margin: 25px 0 0 20px;
 }
-.tile-blockS:first-child {
 
-}
 .tile-blockS {
 	width: 30%;
 	// margin: 0 0 2% 2%;
@@ -327,6 +360,29 @@ section, footer {
 	padding: 0 15px;
 }
 
+.block1 {
+	@include bgi('tile1.jpg', 'tile/');
+}
+.block2 {
+	@include bgi('tile2.jpg', 'tile/');
+}
+.block3 {
+	@include bgi('tile3.jpg', 'tile/');
+	margin-right: 0;
+}
+.block4 {
+	@include bgi('tile4.jpg', 'tile/');
+}
+.block5 {
+	@include bgi('tile5.jpg', 'tile/');
+}
+.block6 {
+	@include bgi('tile6.jpg', 'tile/');
+}
+.block7 {
+	@include bgi('tile7.jpg', 'tile/');
+	// margin: 0 0 0 20px;
+}
 .block1,
 .block2,
 .block3,
@@ -338,43 +394,6 @@ section, footer {
 	background-position: inherit;
 	background-repeat: no-repeat;
 	min-width: 30%;
-}
-.block1 {
-	background-repeat: no-repeat;
-	min-width: 30%;
-	@include bgi('tile1.jpg', 'tile/');
-}
-.block2 {
-	background-repeat: no-repeat;
-	min-width: 30%;
-	@include bgi('tile2.jpg', 'tile/');
-}
-.block3 {
-	background-repeat: no-repeat;
-	min-width: 30%;
-	@include bgi('tile3.jpg', 'tile/');
-	margin-right: 0;
-}
-.block4 {
-	background-repeat: no-repeat;
-	min-width: 30%;
-	@include bgi('tile4.jpg', 'tile/');
-}
-.block5 {
-	background-repeat: no-repeat;
-	min-width: 30%;
-	@include bgi('tile5.jpg', 'tile/');
-}
-.block6 {
-	background-repeat: no-repeat;
-	min-width: 30%;
-	@include bgi('tile6.jpg', 'tile/');
-}
-.block7 {
-	background-repeat: no-repeat;
-	min-width: 30%;
-	@include bgi('tile7.jpg', 'tile/');
-	// margin: 0 0 0 20px;
 }
 // tile END
 //search

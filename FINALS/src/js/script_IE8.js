@@ -1,8 +1,8 @@
 (function(){
-// search();
+search();
 
 
-// init Isotope
+// // init Isotope
 // var grid = document.querySelector('.grid');
 
 // var msnry = new Masonry( grid, {
@@ -125,7 +125,7 @@ function nextLeft(event) { // переход к предыдущему слай�
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function search(){
-	console.log('OK!!');
+	// console.log('OK!!');
 	var valArr = document.getElementById('serchVal');
 
 	if (valArr != null) {
@@ -137,108 +137,36 @@ function search(){
 
 
 // **********
-// var $searchText = $('#searchText').val();
+var $searchText = $('#serchVal').val();
+// console.log('Значение: ' + $searchText);
+if($searchText){var search = 'q=' + $searchText};
+		$.ajax({
+			url: 'https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=7&' + search,
+			dataType: "jsonp",
+			error: function(e) { console.log('Error: ' + e);},
+			success: function(data) {
 
-// 		$.ajax({
-// 			url: 'https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=7&q=' + $searchText,
-// 			dataType: "jsonp",
-// 			success: function(data) {
-// 				// var htmlText = $("#templite").html();
-// 				// $('.result').html(tmpl(htmlText, data));
+						var answerServ = data;
+						var picture = {};
+							for(var i = 0; i < answerServ.hits.length; i++) {
 
-// 				for(var key in data.hits[0]) { console.log(key);}
-// 				console.log(data);
+								document.getElementById('b' + (i +1 )).style.backgroundImage = "url('" + answerServ.hits[i].webformatURL + "')";
 
-// 			}
+								document.getElementById('b' + (i +1 )).firstChild.innerHTML = answerServ.hits[i].tags;
+								// console.log(answerServ.hits.length);
+								
+							}	
 
-// 		});
+			}
+
+		});
+
 // *******END*******
 
 
 
-
-		// function getXmlHttp(){
-		// 	var xmlhttp;
-		// 	try {
-		// 		xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-		// 	} catch (e) {
-		// 		try {
-		// 			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-		// 		} catch (E) {
-		// 			xmlhttp = false;
-		// 		}
-		// 	}
-		// 	if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
-		// 		xmlhttp = new XMLHttpRequest();
-		// 	}
-		// 	return xmlhttp;
-		// }
-
-		// crossDomainAjax('https://api.riffsy.com/v1/search?tag=<query>&key=LIVDSRZULELA', function (data) {
-		// 	alert('Yes');
-		// });
-
-// 		function crossDomainAjax (url, successCallback) {
-
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-    // IE8 & 9 only Cross domain JSON GET request
-    var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
-
-    var xhr = new XHR();
-    // for(var key in xhr) { console.log(key);}
-    // console.log(xhr);
-// 				// (2) запрос на другой домен :)
-			xhr.onload = function() {
-				alert( this.responseText );
-			}
-			xhr.open("POST", "https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=7&q=");
-			xhr.send('q=' + valSearch); 
-
-
-// 			xhr.onerror = function() {
-// 				alert( 'Ошибка ' + this.status );
-// 			}
-
-// };
-
-//     // IE7 and lower can't do cross domain
-//     else if (navigator.userAgent.indexOf('MSIE') != -1 &&
-//              parseInt(navigator.userAgent.match(/MSIE ([\d.]+)/)[1], 10) < 8) {
-//        return false;
-//     }    
-
-
-		// var xdr = new XDomainRequest();
-		// // // var xmlhttp = getXmlHttp();
-
-		// xdr.open("POST", 'https://api.riffsy.com/v1/search?tag=<query>&key=LIVDSRZULELA', true);
-		// 		// xmlhttp.open("POST", 'https://pixabay.com/api/?key=2668312-be09c273d04a440a3f3617dc4&per_page=7&q=' + valSearch, true); //q=' + valSearch
-		// xdr.send('tag=' + valSearch);
-		// 		// xmlhttp.send('q=' + valSearch);
-		// xdr.onload = function() { alert("READY"); };
-		// 		xmlhttp.onreadystatechange = function() {
-
-		// 			if (xmlhttp.readyState == 4) {
-		// 				if(xmlhttp.status == 200) {
-		// 					var answerServ = JSON.parse(xmlhttp.responseText);
-		// 					var picture = {};
-		// 						// console.log(answerServ.hits);
-		// 						for(var i = 0; i < answerServ.hits.length; i++) {
-
-		// 							document.getElementById('b' + (i +1 )).style.backgroundImage = "url('" + answerServ.hits[i].webformatURL + "')";
-		// 							document.getElementById('b' + (i +1 )).childNodes[1].innerHTML = answerServ.hits[i].tags;
-
-		// 						}	
-		// 					}
-		// 				}
-		// 			}
-
-
 	};
-// };
+
 
 document.getElementById('search').attachEvent('onclick', search);
 

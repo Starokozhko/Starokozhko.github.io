@@ -1,56 +1,609 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+/* line 8, scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 18, scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+/* line 31, scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 50, scss/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 61, scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 70, scss/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+/* line 79, scss/_normalize.scss */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 92, scss/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 102, scss/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 115, scss/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 125, scss/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 134, scss/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 143, scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 152, scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 161, scss/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 170, scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 179, scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 187, scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 191, scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 202, scss/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 210, scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 222, scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 234, scss/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 243, scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 257, scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+/* line 269, scss/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 278, scss/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 288, scss/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 299, scss/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 310, scss/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 322, scss/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 333, scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 346, scss/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, scss/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, scss/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, scss/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, scss/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+/* line 397, scss/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+/* line 406, scss/_normalize.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 416, scss/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(../fonts/roboto-light-webfont.woff2) format("woff2"), url(../fonts/roboto-light-webfont.woff);
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  src: local("Montserrat-Bold"), local("MontserratBold"), url(../fonts/montserrat-bold-webfont.woff2) format("woff2"), url(../fonts/montserrat-bold-webfont.woff);
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-Regular"), local("MontserratRegular"), url(../fonts/montserrat-regular-webfont.woff2) format("woff2"), url(../fonts/montserrat-regular-webfont.woff);
+}
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 9, scss/media-queries.scss */
+  header {
+    background: url(../img/RTheader_fon.jpg) center no-repeat;
+  }
+
+  /* line 12, scss/media-queries.scss */
+  .step1 {
+    background: url(../img/steps/RTstep_sprite.jpg) no-repeat;
+  }
+
+  /* line 15, scss/media-queries.scss */
+  .step2 {
+    background: url(../img/steps/RTstep_sprite.jpg) no-repeat;
+    background-position: -300px 0;
+  }
+
+  /* line 19, scss/media-queries.scss */
+  .step3 {
+    background: url(../img/steps/RTstep_sprite.jpg) no-repeat;
+    background-position: -600px 0;
+  }
+}
 @media screen and (min-width: 960px) {
   /* END IE11*/
-  /* line 9, scss/media-queries.scss */
+  /* line 37, scss/media-queries.scss */
   .wrapper {
-    width: 960px;
+    width: 940px;
   }
 }
 /* END width 960 + */
 @media screen and (max-width: 959px) {
   /* END IE11*/
-  /* line 23, scss/media-queries.scss */
+  /* line 53, scss/media-queries.scss */
   .wrapper {
     width: 748px;
     margin: 0 auto;
   }
 
-  /* line 27, scss/media-queries.scss */
+  /* line 57, scss/media-queries.scss */
+  .header-top-logo {
+    margin-left: 39px;
+  }
+
+  /* line 60, scss/media-queries.scss */
+  .singUp {
+    margin: -1px 39px 0 19px;
+  }
+
+  /* line 63, scss/media-queries.scss */
+  .header-title-h1 {
+    margin: 0 0 0 -5px;
+  }
+
+  /* line 66, scss/media-queries.scss */
+  .header-title-h2 {
+    margin: 19px 0 30px -2px;
+  }
+
+  /* line 69, scss/media-queries.scss */
+  .header-title-btn {
+    padding-right: 3px;
+  }
+
+  /* line 72, scss/media-queries.scss */
+  .steps-h3 {
+    margin: 0 0 32px 7px;
+  }
+
+  /* line 75, scss/media-queries.scss */
+  .partner-h3 {
+    margin: 2px 0 30px -6px;
+  }
+
+  /* line 78, scss/media-queries.scss */
   .tile {
     width: 748px;
     display: block;
     margin: 0 auto;
   }
 
-  /* line 32, scss/media-queries.scss */
+  /* line 83, scss/media-queries.scss */
   .steps-block {
     width: 236px;
   }
 
-  /* line 35, scss/media-queries.scss */
+  /* line 86, scss/media-queries.scss */
   .steps-block-arrow {
     margin-top: 40px;
   }
 
-  /* line 38, scss/media-queries.scss */
+  /* line 89, scss/media-queries.scss */
   .partner-block {
     text-align: center;
     margin-bottom: -20px;
   }
 
-  /* line 42, scss/media-queries.scss */
+  /* line 93, scss/media-queries.scss */
   .partner-block-item {
     display: inline-block;
     vertical-align: top;
     float: none;
-    margin: 0 20px 55px 20px;
+    margin: 0 0 55px 0;
   }
 
-  /* line 48, scss/media-queries.scss */
+  /* line 99, scss/media-queries.scss */
+  .bItem1 {
+    padding: 0 0 0 129px;
+  }
+
+  /* line 102, scss/media-queries.scss */
+  .bItem2 {
+    padding: 0px 118px 0 0px;
+  }
+
+  /* line 105, scss/media-queries.scss */
+  .bItem3 {
+    padding: 2px 0px 0 118px;
+  }
+
+  /* line 108, scss/media-queries.scss */
+  .bItem4 {
+    padding: 2px 127px 0 0px;
+  }
+
+  /* line 111, scss/media-queries.scss */
+  .partner-btn {
+    margin: 3px auto 0;
+  }
+
+  /* line 114, scss/media-queries.scss */
   .tile-blockS {
     width: 230px;
+    margin: 8px 8px 10px;
   }
 
-  /* line 51, scss/media-queries.scss */
+  /* line 118, scss/media-queries.scss */
+  .tile-wrapper {
+    margin: 0 0 0 10px;
+  }
+
+  /* line 121, scss/media-queries.scss */
   .block1,
   .block2,
   .block3,
@@ -61,79 +614,104 @@
     background-size: cover;
   }
 
-  /* line 60, scss/media-queries.scss */
+  /* line 130, scss/media-queries.scss */
   .tile-blockB {
     width: 475px;
+    margin: 8px 8px 10px;
   }
 
-  /* line 63, scss/media-queries.scss */
+  /* line 134, scss/media-queries.scss */
   .block7 {
     background-position: center;
   }
+
+  /* line 137, scss/media-queries.scss */
+  .footer-column-logo {
+    margin: -1px 85px 0 30px;
+  }
+
+  /* line 140, scss/media-queries.scss */
+  .footer-column {
+    margin-right: 91px;
+  }
+
+  /* line 143, scss/media-queries.scss */
+  .footer-column-copyR-text,
+  .footer-column-copyR-logo {
+    margin-right: 30px;
+  }
 }
-/* END width 768-939 */
-@media only screen and (max-width: 748px) {
+/* END  */
+@media only screen and (max-width: 767px) {
   /* END IE11*/
-  /* line 98, scss/media-queries.scss */
+  /* line 164, scss/media-queries.scss */
   header {
     height: 540px;
     min-width: 320px;
     background: url(../img/header_fon.jpg) center no-repeat;
     background-size: cover;
   }
-  /* line 103, scss/media-queries.scss */
+  /* line 169, scss/media-queries.scss */
   header .wrapper {
     padding: 0 10px;
   }
 
-  /* line 107, scss/media-queries.scss */
+  /* line 173, scss/media-queries.scss */
   .wrapper,
   .tile {
     width: 300px;
   }
 
-  /* line 111, scss/media-queries.scss */
+  /* line 177, scss/media-queries.scss */
   .header-top {
-    top: 30px;
+    top: 20px;
+    margin-left: -16px;
     text-align: center;
+    line-height: 31px;
   }
 
-  /* line 115, scss/media-queries.scss */
+  /* line 183, scss/media-queries.scss */
   .header-top-logo {
     position: absolute;
-    top: 139px;
+    top: 144px;
+    left: 77px;
+    margin-left: -1px;
   }
 
-  /* line 119, scss/media-queries.scss */
+  /* line 189, scss/media-queries.scss */
   .header-top-btn {
     float: none;
+    margin-right: 2px;
   }
 
-  /* line 122, scss/media-queries.scss */
+  /* line 193, scss/media-queries.scss */
   .header-top-btn {
     position: relative;
     left: -113px;
   }
 
-  /* line 127, scss/media-queries.scss */
+  /* line 198, scss/media-queries.scss */
   .singUp {
     left: 65px;
     display: inline-block;
+    width: 84px;
+    margin: -1px 6px 0 18px;
   }
 
-  /* line 131, scss/media-queries.scss */
+  /* line 204, scss/media-queries.scss */
   .header-title {
-    margin-top: 190px;
+    margin-top: 186px;
   }
 
-  /* line 134, scss/media-queries.scss */
+  /* line 207, scss/media-queries.scss */
   .header-title-h1 {
     width: 282px;
     font-size: 30px;
     line-height: 36px;
+    margin: 1px 0 0 0px;
   }
 
-  /* line 139, scss/media-queries.scss */
+  /* line 213, scss/media-queries.scss */
   .header-title-h2 {
     width: 220px;
     font-size: 18px;
@@ -141,7 +719,12 @@
     margin: 8px auto 15px;
   }
 
-  /* line 146, scss/media-queries.scss */
+  /* line 219, scss/media-queries.scss */
+  .content-info {
+    margin-top: 28%;
+  }
+
+  /* line 222, scss/media-queries.scss */
   .header-title-btn,
   .partner-btn,
   .search-input,
@@ -149,23 +732,87 @@
     width: 280px;
   }
 
-  /* line 153, scss/media-queries.scss */
+  /* line 229, scss/media-queries.scss */
   .steps,
   .partner,
-  .tile,
-  .search {
+  .tile {
     padding-top: 33px;
   }
 
-  /* line 159, scss/media-queries.scss */
+  /* line 235, scss/media-queries.scss */
   .steps-h3,
-  .partner-h3,
   .tile-h3,
   .search-h3 {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 
-  /* line 165, scss/media-queries.scss */
+  /* line 240, scss/media-queries.scss */
+  .partner-h3 {
+    margin: 0px 0 14px -7px;
+  }
+
+  /* line 244, scss/media-queries.scss */
+  .step1 {
+    background: url(../img/steps/min/step1.jpg) no-repeat;
+  }
+  /* line 246, scss/media-queries.scss */
+  .step1 .content-info {
+    margin-top: 27%;
+    margin-bottom: 17px;
+  }
+
+  /* line 251, scss/media-queries.scss */
+  .step2 {
+    background: url(../img/steps/min/step2.jpg) no-repeat;
+  }
+  /* line 253, scss/media-queries.scss */
+  .step2 .content-info {
+    margin-top: 39%;
+    margin-bottom: 16px;
+  }
+  /* line 257, scss/media-queries.scss */
+  .step2 .content-info-title {
+    margin: 0 0 0 -2px;
+  }
+  /* line 260, scss/media-queries.scss */
+  .step2 .content-info-description {
+    margin: 10px 0 0 0;
+  }
+
+  /* line 264, scss/media-queries.scss */
+  .step3 {
+    background: url(../img/steps/min/step3.jpg) no-repeat;
+  }
+  /* line 266, scss/media-queries.scss */
+  .step3 .content-info {
+    margin-top: 27.5%;
+    margin-bottom: 15px;
+  }
+  /* line 270, scss/media-queries.scss */
+  .step3 .content-info-title {
+    margin: 0 0 0 -2px;
+  }
+  /* line 273, scss/media-queries.scss */
+  .step3 .content-info-description {
+    margin: 12px 0 0 0;
+  }
+
+  /* line 277, scss/media-queries.scss */
+  .steps-block-arrow {
+    display: none;
+  }
+
+  /* line 280, scss/media-queries.scss */
+  .steps-block-content {
+    display: block;
+  }
+
+  /* line 283, scss/media-queries.scss */
+  .steps-h3 {
+    margin: 1px 0  13px -5px;
+  }
+
+  /* line 286, scss/media-queries.scss */
   .steps-block {
     width: 300px;
     height: 240px;
@@ -174,41 +821,145 @@
     position: relative;
   }
 
-  /* line 172, scss/media-queries.scss */
+  /* line 293, scss/media-queries.scss */
+  .partner {
+    padding-top: 25px;
+  }
+
+  /* line 296, scss/media-queries.scss */
   .partner-block-item {
     margin-bottom: 23px;
   }
 
-  /* line 176, scss/media-queries.scss */
+  /* line 299, scss/media-queries.scss */
+  .img1 {
+    margin-left: 59px;
+  }
+
+  /* line 302, scss/media-queries.scss */
+  .img3 {
+    margin-left: 49px;
+    margin-top: 4px;
+  }
+
+  /* line 306, scss/media-queries.scss */
+  .img2 {
+    margin: 4px 0 0 47px;
+  }
+
+  /* line 309, scss/media-queries.scss */
+  .img4 {
+    margin: 4px 0 0 47px;
+  }
+
+  /* line 312, scss/media-queries.scss */
+  .bItem1 {
+    order: 1;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+
+  /* line 317, scss/media-queries.scss */
+  .bItem2 {
+    order: 3;
+  }
+
+  /* line 320, scss/media-queries.scss */
+  .bItem3 {
+    order: 2;
+  }
+
+  /* line 323, scss/media-queries.scss */
+  .bItem4 {
+    order: 3;
+  }
+
+  /* line 326, scss/media-queries.scss */
+  .bItem2,
+  .bItem3,
+  .bItem4 {
+    padding: 0;
+    margin: 23px 0 0 0;
+  }
+
+  /* line 332, scss/media-queries.scss */
+  .title1 {
+    margin-left: 18px;
+    margin-top: 13px;
+  }
+
+  /* line 336, scss/media-queries.scss */
+  .title3 {
+    margin: 14px 0 0 -2px;
+  }
+
+  /* line 339, scss/media-queries.scss */
+  .title4 {
+    margin: 13px 0 0 -6px;
+  }
+
+  /* line 342, scss/media-queries.scss */
+  .desc3 {
+    margin: 14px 0 0 0;
+  }
+
+  /* line 345, scss/media-queries.scss */
+  .desc1 {
+    margin-left: 16px;
+  }
+
+  /* line 348, scss/media-queries.scss */
+  .desc4 {
+    margin: 13px 0 0 -8px;
+  }
+
+  /* line 351, scss/media-queries.scss */
   .block2 {
     background-position: 0 -127px;
   }
 
-  /* line 179, scss/media-queries.scss */
+  /* line 354, scss/media-queries.scss */
   .block3,
   .block7 {
     background-position: 0 -50px;
   }
 
-  /* line 183, scss/media-queries.scss */
+  /* line 358, scss/media-queries.scss */
   .block4 {
     background-position: 0 -117px;
   }
 
-  /* line 186, scss/media-queries.scss */
+  /* line 361, scss/media-queries.scss */
   .block7 {
     margin-left: 0;
   }
 
-  /* line 191, scss/media-queries.scss */
+  /* line 364, scss/media-queries.scss */
+  .partner-btn {
+    margin: 47px auto 0;
+    line-height: 38px;
+    padding: 0 3px 0 0px;
+  }
+
+  /* line 370, scss/media-queries.scss */
+  .tile-h3 {
+    margin-bottom: 12px;
+  }
+
+  /* line 373, scss/media-queries.scss */
+  .tile-wrapper {
+    margin: 0 auto;
+  }
+
+  /* line 376, scss/media-queries.scss */
   .tile-blockS,
   .tile-blockB {
     width: 300px;
     height: 120px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
   }
 
-  /* line 197, scss/media-queries.scss */
+  /* line 382, scss/media-queries.scss */
   .block1,
   .block2,
   .block3,
@@ -220,27 +971,34 @@
     background-position: inherit;
   }
 
-  /* line 209, scss/media-queries.scss */
+  /* line 393, scss/media-queries.scss */
+  .search {
+    padding-top: 13px;
+  }
+
+  /* line 396, scss/media-queries.scss */
   .search-h3 {
-    margin-bottom: 0;
+    margin: 14px 0 0 -3px;
   }
 
-  /* line 212, scss/media-queries.scss */
+  /* line 399, scss/media-queries.scss */
   .search-text {
-    margin: 12px 0 15px;
+    margin: 8px 0 18px -2px;
   }
 
-  /* line 215, scss/media-queries.scss */
+  /* line 402, scss/media-queries.scss */
   .search-input {
     margin-right: 0;
+    padding: 0 13px;
   }
 
-  /* line 218, scss/media-queries.scss */
+  /* line 406, scss/media-queries.scss */
   .search-btn {
     margin-top: 10px;
+    padding: 0 4px 0 0px;
   }
 
-  /* line 223, scss/media-queries.scss */
+  /* line 412, scss/media-queries.scss */
   .footer {
     min-width: 320px;
     margin-top: 40px;
@@ -248,21 +1006,26 @@
     text-align: center;
     padding: 16px 0;
   }
-  /* line 229, scss/media-queries.scss */
+  /* line 418, scss/media-queries.scss */
   .footer .wrapper {
     padding: 0 30px;
   }
 
-  /* line 233, scss/media-queries.scss */
+  /* line 422, scss/media-queries.scss */
   .footer-column-logo {
     width: 240px;
     float: none;
     margin-right: 0;
     display: inline-block;
-    margin-bottom: 10px;
+    margin: -1px 85px 10px 30px;
   }
 
-  /* line 240, scss/media-queries.scss */
+  /* line 429, scss/media-queries.scss */
+  .footer-column-logo-link {
+    margin-left: -43px;
+  }
+
+  /* line 432, scss/media-queries.scss */
   .footer-column {
     width: 240px;
     float: none;
@@ -271,19 +1034,29 @@
     margin-bottom: 5px;
   }
 
-  /* line 247, scss/media-queries.scss */
+  /* line 439, scss/media-queries.scss */
   .footer-column-ul-li:first-child {
-    margin: 0 auto;
+    margin: 3px 0 0 -22px;
     display: block;
   }
 
-  /* line 251, scss/media-queries.scss */
+  /* line 443, scss/media-queries.scss */
   .footer-column-ul-li {
     margin-right: 12px;
     display: inline-block;
   }
 
-  /* line 255, scss/media-queries.scss */
+  /* line 447, scss/media-queries.scss */
+  .footer-li-first {
+    margin-left: -29px;
+  }
+
+  /* line 450, scss/media-queries.scss */
+  .footer-li {
+    margin-left: -3px;
+  }
+
+  /* line 453, scss/media-queries.scss */
   .footer-column-copyR {
     display: inline-block;
     float: none;
@@ -291,15 +1064,16 @@
     margin: 10px auto 0;
   }
 
-  /* line 261, scss/media-queries.scss */
+  /* line 459, scss/media-queries.scss */
   .footer-column-copyR-text {
-    text-align: center;
+    margin: 0 42px 0 0px;
   }
 
-  /* line 264, scss/media-queries.scss */
+  /* line 462, scss/media-queries.scss */
   .footer-column-copyR-logo {
     float: none;
     display: inline-block;
+    margin: 5px 0 0 -43px;
   }
 }
-/* END width 320-767 */
+/* END */

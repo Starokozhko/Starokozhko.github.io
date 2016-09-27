@@ -495,7 +495,7 @@ body {
 /* line 30, scss/style.scss */
 header {
   height: 700px;
-  background: url(../img/header_fon_m.jpg) center no-repeat;
+  background: url(../img/header_fon.jpg) center no-repeat;
   background-size: cover;
   color: #fff;
 }
@@ -630,17 +630,30 @@ section:after, footer:after {
 
 /* line 134, scss/style.scss */
 .steps-h3,
-.partner-h3,
-.tile-h3,
-.search-h3 {
+.partner-h3 {
   color: #333333;
-  margin: 0 0 32px 0;
+  margin: 0 0 32px -4px;
   font: bold 22px "Montserrat";
   text-align: center;
-  margin-left: -4px;
 }
 
-/* line 144, scss/style.scss */
+/* line 141, scss/style.scss */
+.search-h3 {
+  color: #333333;
+  margin: 13px 0 32px -4px;
+  font: bold 22px "Montserrat";
+  text-align: center;
+}
+
+/* line 147, scss/style.scss */
+.tile-h3 {
+  color: #333333;
+  margin: 0 0 25px -4px;
+  font: bold 22px "Montserrat";
+  text-align: center;
+}
+
+/* line 153, scss/style.scss */
 .steps-block {
   width: 300px;
   height: 400px;
@@ -656,34 +669,34 @@ section:after, footer:after {
   display: table;
   transition: background-position 0.500s;
 }
-/* line 158, scss/style.scss */
+/* line 167, scss/style.scss */
 .steps-block:last-child {
   margin-right: 0;
 }
 
-/* line 163, scss/style.scss */
+/* line 172, scss/style.scss */
 .step1 {
-  background: url(../img/steps/step_sprite.jpg) no-repeat;
-}
-
-/* line 166, scss/style.scss */
-.step2 {
-  background: url(../img/steps/step_sprite.jpg) no-repeat;
-  background-position: -300px 0;
-}
-
-/* line 170, scss/style.scss */
-.step3 {
-  background: url(../img/steps/step_sprite.jpg) no-repeat;
-  background-position: -600px 0;
+  background: url(../img/steps/sprite2.jpg) no-repeat;
 }
 
 /* line 175, scss/style.scss */
+.step2 {
+  background: url(../img/steps/sprite2.jpg) no-repeat;
+  background-position: -300px 0;
+}
+
+/* line 179, scss/style.scss */
+.step3 {
+  background: url(../img/steps/sprite2.jpg) no-repeat;
+  background-position: -600px 0;
+}
+
+/* line 184, scss/style.scss */
 .steps-block-arrow {
   margin-top: 153px;
 }
 
-/* line 178, scss/style.scss */
+/* line 187, scss/style.scss */
 .steps-block-arrow-left {
   width: 30px;
   height: 60px;
@@ -691,12 +704,12 @@ section:after, footer:after {
   background: url(../img/steps/arrow.png) no-repeat;
   background-position: 0 0;
 }
-/* line 184, scss/style.scss */
+/* line 193, scss/style.scss */
 .steps-block-arrow-left:hover {
   opacity: 0.6;
 }
 
-/* line 188, scss/style.scss */
+/* line 197, scss/style.scss */
 .steps-block-arrow-right {
   width: 30px;
   height: 55px;
@@ -704,30 +717,30 @@ section:after, footer:after {
   background: url(../img/steps/arrow.png) no-repeat;
   background-position: -30px 0;
 }
-/* line 194, scss/style.scss */
+/* line 203, scss/style.scss */
 .steps-block-arrow-right:hover {
   opacity: 0.6;
 }
 
-/* line 198, scss/style.scss */
+/* line 207, scss/style.scss */
 .steps-block-content {
   height: 174px;
   vertical-align: bottom;
   display: table-row-group;
 }
 
-/* line 203, scss/style.scss */
+/* line 212, scss/style.scss */
 .span-wrap {
   display: none;
   float: left;
 }
 
-/* line 207, scss/style.scss */
+/* line 216, scss/style.scss */
 .active {
   display: block;
 }
 
-/* line 211, scss/style.scss */
+/* line 220, scss/style.scss */
 .content-info {
   width: 70px;
   height: 20px;
@@ -745,13 +758,13 @@ section:after, footer:after {
   display: inline-block;
 }
 
-/* line 227, scss/style.scss */
+/* line 236, scss/style.scss */
 .content-info-title {
   font: bold 24px/27px "Montserrat";
   display: block;
 }
 
-/* line 231, scss/style.scss */
+/* line 240, scss/style.scss */
 .content-info-description {
   color: #cccccc;
   line-height: 17px;
@@ -759,7 +772,7 @@ section:after, footer:after {
   display: block;
 }
 
-/* line 240, scss/style.scss */
+/* line 249, scss/style.scss */
 .partner-block {
   overflow: hidden;
   display: -webkit-box;
@@ -771,19 +784,19 @@ section:after, footer:after {
   justify-content: space-around;
 }
 
-/* line 246, scss/style.scss */
+/* line 255, scss/style.scss */
 .partner-block-item {
   width: 220px;
   position: relative;
   text-align: center;
 }
 
-/* line 253, scss/style.scss */
+/* line 262, scss/style.scss */
 .partner-block-item:first-child {
   margin-left: 0;
 }
 
-/* line 256, scss/style.scss */
+/* line 265, scss/style.scss */
 .item-img {
   width: 124px;
   height: 125px;
@@ -794,41 +807,86 @@ section:after, footer:after {
 .img1 {
   background-image: url(../img/partners/sprite.png);
   background-position: 0px 0px;
+  margin-left: 42px;
 }
 
 /* line 7, scss/_sprite.scss */
 .img2 {
   background-image: url(../img/partners/sprite.png);
   background-position: -125px 0px;
+  margin-left: 47px;
 }
 
 /* line 12, scss/_sprite.scss */
 .img3 {
   background-image: url(../img/partners/sprite.png);
   background-position: 0px -126px;
+  margin-left: 52px;
 }
 
 /* line 17, scss/_sprite.scss */
 .img4 {
   background-image: url(../img/partners/sprite.png);
   background-position: -250px 0px;
+  margin-left: 57px;
 }
 
-/* line 265, scss/style.scss */
+/* line 273, scss/style.scss */
 .item-title {
   font: bold 14px "Montserrat";
   display: block;
   color: #333333;
-  margin: 14px 0 13px;
+  margin-top: 15px;
+  margin-bottom: 13px;
 }
 
-/* line 271, scss/style.scss */
+/* line 281, scss/style.scss */
+.title1 {
+  margin-left: -16px;
+}
+
+/* line 284, scss/style.scss */
+.title2 {
+  margin-left: -7px;
+}
+
+/* line 287, scss/style.scss */
+.title3 {
+  margin-left: 3px;
+}
+
+/* line 290, scss/style.scss */
+.title4 {
+  margin-left: 13px;
+}
+
+/* line 293, scss/style.scss */
 .item-description {
   line-height: 16px;
   display: inline-block;
 }
 
-/* line 275, scss/style.scss */
+/* line 297, scss/style.scss */
+.desc1 {
+  margin-left: -13px;
+}
+
+/* line 300, scss/style.scss */
+.desc2 {
+  margin-left: -9px;
+}
+
+/* line 303, scss/style.scss */
+.desc3 {
+  margin-left: 1px;
+}
+
+/* line 306, scss/style.scss */
+.desc4 {
+  margin-left: 12px;
+}
+
+/* line 310, scss/style.scss */
 .partner-btn {
   width: 192px;
   height: 40px;
@@ -842,26 +900,26 @@ section:after, footer:after {
   border: 2px solid #ff4e50;
   display: block;
   text-align: center;
-  margin: 40px auto 0;
+  margin: 39px auto 0;
   box-sizing: border-box;
 }
-/* line 287, scss/style.scss */
+/* line 322, scss/style.scss */
 .partner-btn:hover {
   color: #333333;
 }
 
-/* line 293, scss/style.scss */
+/* line 328, scss/style.scss */
 .tile-wrapper {
   width: 100%;
-  margin: 34px 0 0 0;
+  margin: 25px 0 0 20px;
 }
 
-/* line 300, scss/style.scss */
+/* line 333, scss/style.scss */
 .tile-blockS {
   width: 30%;
 }
 
-/* line 305, scss/style.scss */
+/* line 338, scss/style.scss */
 .tile-blockS,
 .tile-blockB {
   margin: 1%;
@@ -875,13 +933,13 @@ section:after, footer:after {
   text-align: center;
 }
 
-/* line 314, scss/style.scss */
+/* line 347, scss/style.scss */
 .tile-blockB {
   width: 62%;
   background-position: center;
 }
 
-/* line 319, scss/style.scss */
+/* line 352, scss/style.scss */
 .blockS-text,
 .blockB-text {
   color: #fff;
@@ -893,7 +951,43 @@ section:after, footer:after {
   padding: 0 15px;
 }
 
-/* line 330, scss/style.scss */
+/* line 363, scss/style.scss */
+.block1 {
+  background: url(../img/tile/tile1.jpg) no-repeat;
+}
+
+/* line 366, scss/style.scss */
+.block2 {
+  background: url(../img/tile/tile2.jpg) no-repeat;
+}
+
+/* line 369, scss/style.scss */
+.block3 {
+  background: url(../img/tile/tile3.jpg) no-repeat;
+  margin-right: 0;
+}
+
+/* line 373, scss/style.scss */
+.block4 {
+  background: url(../img/tile/tile4.jpg) no-repeat;
+}
+
+/* line 376, scss/style.scss */
+.block5 {
+  background: url(../img/tile/tile5.jpg) no-repeat;
+}
+
+/* line 379, scss/style.scss */
+.block6 {
+  background: url(../img/tile/tile6.jpg) no-repeat;
+}
+
+/* line 382, scss/style.scss */
+.block7 {
+  background: url(../img/tile/tile7.jpg) no-repeat;
+}
+
+/* line 386, scss/style.scss */
 .block1,
 .block2,
 .block3,
@@ -907,57 +1001,7 @@ section:after, footer:after {
   min-width: 30%;
 }
 
-/* line 342, scss/style.scss */
-.block1 {
-  background-repeat: no-repeat;
-  min-width: 30%;
-  background: url(../img/tile/tile1.jpg) no-repeat;
-}
-
-/* line 347, scss/style.scss */
-.block2 {
-  background-repeat: no-repeat;
-  min-width: 30%;
-  background: url(../img/tile/tile2.jpg) no-repeat;
-}
-
-/* line 352, scss/style.scss */
-.block3 {
-  background-repeat: no-repeat;
-  min-width: 30%;
-  background: url(../img/tile/tile3.jpg) no-repeat;
-  margin-right: 0;
-}
-
-/* line 358, scss/style.scss */
-.block4 {
-  background-repeat: no-repeat;
-  min-width: 30%;
-  background: url(../img/tile/tile4.jpg) no-repeat;
-}
-
-/* line 363, scss/style.scss */
-.block5 {
-  background-repeat: no-repeat;
-  min-width: 30%;
-  background: url(../img/tile/tile5.jpg) no-repeat;
-}
-
-/* line 368, scss/style.scss */
-.block6 {
-  background-repeat: no-repeat;
-  min-width: 30%;
-  background: url(../img/tile/tile6.jpg) no-repeat;
-}
-
-/* line 373, scss/style.scss */
-.block7 {
-  background-repeat: no-repeat;
-  min-width: 30%;
-  background: url(../img/tile/tile7.jpg) no-repeat;
-}
-
-/* line 381, scss/style.scss */
+/* line 400, scss/style.scss */
 .search-text {
   display: block;
   text-align: center;
@@ -966,13 +1010,13 @@ section:after, footer:after {
   margin: -2px 0 40px -3px;
 }
 
-/* line 388, scss/style.scss */
+/* line 407, scss/style.scss */
 .search-form {
   text-align: center;
   margin-top: -3px;
 }
 
-/* line 392, scss/style.scss */
+/* line 411, scss/style.scss */
 .search-input {
   width: 240px;
   height: 40px;
@@ -985,7 +1029,7 @@ section:after, footer:after {
   margin: 0 6px 0 -2px;
 }
 
-/* line 403, scss/style.scss */
+/* line 422, scss/style.scss */
 .search-btn {
   width: 160px;
   height: 40px;
@@ -1000,66 +1044,66 @@ section:after, footer:after {
   cursor: pointer;
   border: 0;
 }
-/* line 413, scss/style.scss */
+/* line 432, scss/style.scss */
 .search-btn:hover {
   color: #333333;
 }
 
-/* line 419, scss/style.scss */
+/* line 438, scss/style.scss */
 .footer {
   margin-top: 100px;
   border-top: 4px solid #ff4e50;
   padding: 36px 0 33px;
 }
 
-/* line 424, scss/style.scss */
+/* line 443, scss/style.scss */
 .footer-column-logo {
   width: 140px;
   margin-right: 100px;
   float: left;
 }
 
-/* line 429, scss/style.scss */
+/* line 448, scss/style.scss */
 .footer-column-logo-link {
   color: #ff4e50;
   font: bold 16px "Montserrat";
   letter-spacing: 0.6px;
 }
-/* line 433, scss/style.scss */
+/* line 452, scss/style.scss */
 .footer-column-logo-link:hover {
   color: #333333;
 }
 
-/* line 437, scss/style.scss */
+/* line 456, scss/style.scss */
 .footer-column {
   width: 80px;
   margin-right: 80px;
   float: left;
 }
 
-/* line 442, scss/style.scss */
+/* line 461, scss/style.scss */
 .footer-column-ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 446, scss/style.scss */
+/* line 465, scss/style.scss */
 .footer-column-ul-li {
   list-style-type: none;
   margin-bottom: 5px;
 }
-/* line 449, scss/style.scss */
+/* line 468, scss/style.scss */
 .footer-column-ul-li a {
   color: #666666;
 }
-/* line 452, scss/style.scss */
+/* line 471, scss/style.scss */
 .footer-column-ul-li:first-child {
   margin-bottom: 10px;
   color: #333333;
   font: bold 14px "Montserrat";
 }
 
-/* line 458, scss/style.scss */
+/* line 477, scss/style.scss */
 .footer-column-copyR {
   width: 140px;
   float: right;
@@ -1068,7 +1112,7 @@ section:after, footer:after {
   top: -6px;
 }
 
-/* line 465, scss/style.scss */
+/* line 484, scss/style.scss */
 .footer-column-copyR-text {
   color: #cccccc;
   font: bold 10px "Montserrat";
@@ -1076,7 +1120,7 @@ section:after, footer:after {
   letter-spacing: 0.9px;
 }
 
-/* line 471, scss/style.scss */
+/* line 490, scss/style.scss */
 .footer-column-copyR-logo {
   width: 110px;
   height: 24px;

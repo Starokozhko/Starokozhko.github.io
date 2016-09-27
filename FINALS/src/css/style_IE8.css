@@ -3,7 +3,6 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url(scss/_sprite.css);
 /* line 8, scss/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -682,32 +681,31 @@ section:after, footer:after {
   float: right;
   background: url(../img/steps/arrow.png) no-repeat;
   background-position: -30px 0;
-  transition: left right 1s;
 }
-/* line 182, scss/style_IE8.scss */
+/* line 181, scss/style_IE8.scss */
 .steps-block-arrow-right:hover {
   right: -10px;
 }
 
-/* line 186, scss/style_IE8.scss */
+/* line 185, scss/style_IE8.scss */
 .steps-block-content {
   height: 174px;
   vertical-align: bottom;
   display: table-row-group;
 }
 
-/* line 191, scss/style_IE8.scss */
+/* line 190, scss/style_IE8.scss */
 .span-wrap {
   display: none;
   float: left;
 }
 
-/* line 195, scss/style_IE8.scss */
+/* line 194, scss/style_IE8.scss */
 .active {
   display: block;
 }
 
-/* line 199, scss/style_IE8.scss */
+/* line 198, scss/style_IE8.scss */
 .content-info {
   width: 70px;
   height: 20px;
@@ -724,13 +722,13 @@ section:after, footer:after {
   display: inline-block;
 }
 
-/* line 214, scss/style_IE8.scss */
+/* line 213, scss/style_IE8.scss */
 .content-info-title {
   font: bold 24px/27px "Montserrat";
   display: block;
 }
 
-/* line 218, scss/style_IE8.scss */
+/* line 217, scss/style_IE8.scss */
 .content-info-description {
   color: #cccccc;
   line-height: 17px;
@@ -738,12 +736,12 @@ section:after, footer:after {
   display: block;
 }
 
-/* line 227, scss/style_IE8.scss */
+/* line 226, scss/style_IE8.scss */
 .partner-block {
   overflow: hidden;
 }
 
-/* line 230, scss/style_IE8.scss */
+/* line 229, scss/style_IE8.scss */
 .partner-block-item {
   width: 210px;
   position: relative;
@@ -752,19 +750,47 @@ section:after, footer:after {
   margin-left: 20px;
 }
 
-/* line 237, scss/style_IE8.scss */
+/* line 236, scss/style_IE8.scss */
 .partner-block-item:first-child {
   margin-left: 0;
 }
 
-/* line 240, scss/style_IE8.scss */
+/* line 239, scss/style_IE8.scss */
 .item-img {
   width: 124px;
   height: 125px;
   margin: 0 auto;
 }
 
-/* line 249, scss/style_IE8.scss */
+/* line 2, scss/_sprite.scss */
+.img1 {
+  background-image: url(../img/partners/sprite.png);
+  background-position: 0px 0px;
+  margin-left: 42px;
+}
+
+/* line 7, scss/_sprite.scss */
+.img2 {
+  background-image: url(../img/partners/sprite.png);
+  background-position: -125px 0px;
+  margin-left: 47px;
+}
+
+/* line 12, scss/_sprite.scss */
+.img3 {
+  background-image: url(../img/partners/sprite.png);
+  background-position: 0px -126px;
+  margin-left: 52px;
+}
+
+/* line 17, scss/_sprite.scss */
+.img4 {
+  background-image: url(../img/partners/sprite.png);
+  background-position: -250px 0px;
+  margin-left: 57px;
+}
+
+/* line 248, scss/style_IE8.scss */
 .item-title {
   font: bold 14px "Montserrat";
   display: block;
@@ -772,13 +798,13 @@ section:after, footer:after {
   margin: 14px 0 13px;
 }
 
-/* line 255, scss/style_IE8.scss */
+/* line 254, scss/style_IE8.scss */
 .item-description {
   line-height: 16px;
   display: inline-block;
 }
 
-/* line 259, scss/style_IE8.scss */
+/* line 258, scss/style_IE8.scss */
 .partner-btn {
   width: 192px;
   height: 40px;
@@ -791,23 +817,23 @@ section:after, footer:after {
   margin: 40px auto 0;
   box-sizing: border-box;
 }
-/* line 270, scss/style_IE8.scss */
+/* line 269, scss/style_IE8.scss */
 .partner-btn:hover {
   color: #333333;
 }
 
-/* line 277, scss/style_IE8.scss */
+/* line 276, scss/style_IE8.scss */
 .tile-wrapper {
   width: 100%;
   margin: 34px 0 0 0;
 }
 
-/* line 282, scss/style_IE8.scss */
+/* line 281, scss/style_IE8.scss */
 .tile-blockS {
   width: 30%;
 }
 
-/* line 286, scss/style_IE8.scss */
+/* line 285, scss/style_IE8.scss */
 .tile-blockS,
 .tile-blockB {
   margin: 1%;
@@ -817,13 +843,13 @@ section:after, footer:after {
   text-align: center;
 }
 
-/* line 294, scss/style_IE8.scss */
+/* line 293, scss/style_IE8.scss */
 .tile-blockB {
   width: 62%;
   background-position: center;
 }
 
-/* line 299, scss/style_IE8.scss */
+/* line 298, scss/style_IE8.scss */
 .blockS-text,
 .blockB-text {
   color: #fff;
@@ -835,7 +861,7 @@ section:after, footer:after {
   padding: 0 15px;
 }
 
-/* line 310, scss/style_IE8.scss */
+/* line 309, scss/style_IE8.scss */
 .block1,
 .block2,
 .block3,
@@ -849,21 +875,21 @@ section:after, footer:after {
   min-width: 30%;
 }
 
-/* line 322, scss/style_IE8.scss */
+/* line 321, scss/style_IE8.scss */
 .block1 {
   background-repeat: no-repeat;
   min-width: 30%;
   background: url(../img/tile/tile1.jpg) no-repeat;
 }
 
-/* line 327, scss/style_IE8.scss */
+/* line 326, scss/style_IE8.scss */
 .block2 {
   background-repeat: no-repeat;
   min-width: 30%;
   background: url(../img/tile/tile2.jpg) no-repeat;
 }
 
-/* line 332, scss/style_IE8.scss */
+/* line 331, scss/style_IE8.scss */
 .block3 {
   background-repeat: no-repeat;
   min-width: 30%;
@@ -871,35 +897,35 @@ section:after, footer:after {
   margin-right: 0;
 }
 
-/* line 338, scss/style_IE8.scss */
+/* line 337, scss/style_IE8.scss */
 .block4 {
   background-repeat: no-repeat;
   min-width: 30%;
   background: url(../img/tile/tile4.jpg) no-repeat;
 }
 
-/* line 343, scss/style_IE8.scss */
+/* line 342, scss/style_IE8.scss */
 .block5 {
   background-repeat: no-repeat;
   min-width: 30%;
   background: url(../img/tile/tile5.jpg) no-repeat;
 }
 
-/* line 348, scss/style_IE8.scss */
+/* line 347, scss/style_IE8.scss */
 .block6 {
   background-repeat: no-repeat;
   min-width: 30%;
   background: url(../img/tile/tile6.jpg) no-repeat;
 }
 
-/* line 353, scss/style_IE8.scss */
+/* line 352, scss/style_IE8.scss */
 .block7 {
   background-repeat: no-repeat;
   min-width: 30%;
   background: url(../img/tile/tile7.jpg) no-repeat;
 }
 
-/* line 362, scss/style_IE8.scss */
+/* line 361, scss/style_IE8.scss */
 .search-text {
   display: block;
   text-align: center;
@@ -909,14 +935,14 @@ section:after, footer:after {
   margin: -2px 0 40px -3px;
 }
 
-/* line 370, scss/style_IE8.scss */
+/* line 369, scss/style_IE8.scss */
 .search-form {
   text-align: center;
   margin-top: -3px;
   display: block;
 }
 
-/* line 375, scss/style_IE8.scss */
+/* line 374, scss/style_IE8.scss */
 .search-input {
   width: 240px;
   height: 40px;
@@ -930,7 +956,7 @@ section:after, footer:after {
   display: inline-block;
 }
 
-/* line 387, scss/style_IE8.scss */
+/* line 386, scss/style_IE8.scss */
 .search-btn {
   width: 160px;
   height: 40px;
@@ -942,66 +968,66 @@ section:after, footer:after {
   cursor: pointer;
   border: 0;
 }
-/* line 397, scss/style_IE8.scss */
+/* line 396, scss/style_IE8.scss */
 .search-btn:hover {
   color: #333333;
 }
 
-/* line 404, scss/style_IE8.scss */
+/* line 403, scss/style_IE8.scss */
 .footer {
   margin-top: 100px;
   border-top: 4px solid #ff4e50;
   padding: 36px 0 33px;
 }
 
-/* line 409, scss/style_IE8.scss */
+/* line 408, scss/style_IE8.scss */
 .footer-column-logo {
   width: 140px;
   margin-right: 100px;
   float: left;
 }
 
-/* line 414, scss/style_IE8.scss */
+/* line 413, scss/style_IE8.scss */
 .footer-column-logo-link {
   color: #ff4e50;
   font: bold 16px "Montserrat";
   letter-spacing: 0.6px;
 }
-/* line 418, scss/style_IE8.scss */
+/* line 417, scss/style_IE8.scss */
 .footer-column-logo-link:hover {
   color: #333333;
 }
 
-/* line 422, scss/style_IE8.scss */
+/* line 421, scss/style_IE8.scss */
 .footer-column {
   width: 80px;
   margin-right: 80px;
   float: left;
 }
 
-/* line 427, scss/style_IE8.scss */
+/* line 426, scss/style_IE8.scss */
 .footer-column-ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 431, scss/style_IE8.scss */
+/* line 430, scss/style_IE8.scss */
 .footer-column-ul-li {
   list-style-type: none;
   margin-bottom: 5px;
 }
-/* line 434, scss/style_IE8.scss */
+/* line 433, scss/style_IE8.scss */
 .footer-column-ul-li a {
   color: #666666;
 }
-/* line 437, scss/style_IE8.scss */
+/* line 436, scss/style_IE8.scss */
 .footer-column-ul-li:first-child {
   margin-bottom: 10px;
   color: #333333;
   font: bold 14px "Montserrat";
 }
 
-/* line 443, scss/style_IE8.scss */
+/* line 442, scss/style_IE8.scss */
 .footer-column-copyR {
   width: 140px;
   float: right;
@@ -1010,7 +1036,7 @@ section:after, footer:after {
   top: -6px;
 }
 
-/* line 450, scss/style_IE8.scss */
+/* line 449, scss/style_IE8.scss */
 .footer-column-copyR-text {
   color: #cccccc;
   font: bold 10px "Montserrat";
@@ -1018,7 +1044,7 @@ section:after, footer:after {
   letter-spacing: 0.9px;
 }
 
-/* line 456, scss/style_IE8.scss */
+/* line 455, scss/style_IE8.scss */
 .footer-column-copyR-logo {
   width: 110px;
   height: 24px;

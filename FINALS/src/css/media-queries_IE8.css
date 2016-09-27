@@ -1,0 +1,302 @@
+@media screen and (min-width: 960px) {
+  /* line 2, scss/media-queries_IE8.scss */
+  .wrapper {
+    width: 960px;
+  }
+}
+/* END width 960 + */
+@media (max-width: 959px) {
+  /* line 9, scss/media-queries_IE8.scss */
+  .wrapper {
+    width: 748px;
+    margin: 0 auto;
+  }
+
+  /* line 13, scss/media-queries_IE8.scss */
+  .tile {
+    width: 748px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 18, scss/media-queries_IE8.scss */
+  .steps-block {
+    width: 236px;
+  }
+
+  /* line 21, scss/media-queries_IE8.scss */
+  .steps-block-arrow {
+    margin-top: 40px;
+  }
+
+  /* line 24, scss/media-queries_IE8.scss */
+  .partner-block {
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  /* line 28, scss/media-queries_IE8.scss */
+  .partner-block-item {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    margin: 0 20px 55px 20px;
+  }
+
+  /* line 34, scss/media-queries_IE8.scss */
+  .tile-blockS {
+    width: 230px;
+  }
+
+  /* line 37, scss/media-queries_IE8.scss */
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .block5,
+  .block6,
+  .block7 {
+    background-size: cover;
+  }
+
+  /* line 46, scss/media-queries_IE8.scss */
+  .tile-blockB {
+    width: 475px;
+  }
+
+  /* line 49, scss/media-queries_IE8.scss */
+  .block7 {
+    background-position: center;
+  }
+}
+/* END width 768-939 */
+@media (max-width: 748px) {
+  /* line 72, scss/media-queries_IE8.scss */
+  header {
+    height: 540px;
+    min-width: 320px;
+    background: url(../img/header_fon.jpg) center no-repeat;
+    background-size: cover;
+  }
+  /* line 77, scss/media-queries_IE8.scss */
+  header .wrapper {
+    padding: 0 10px;
+  }
+
+  /* line 81, scss/media-queries_IE8.scss */
+  .wrapper,
+  .tile {
+    width: 300px;
+  }
+
+  /* line 85, scss/media-queries_IE8.scss */
+  .header-top {
+    top: 30px;
+    text-align: center;
+  }
+
+  /* line 89, scss/media-queries_IE8.scss */
+  .header-top-logo {
+    position: absolute;
+    top: 139px;
+  }
+
+  /* line 93, scss/media-queries_IE8.scss */
+  .header-top-btn {
+    float: none;
+  }
+
+  /* line 96, scss/media-queries_IE8.scss */
+  .header-top-btn {
+    position: relative;
+    left: -113px;
+  }
+
+  /* line 101, scss/media-queries_IE8.scss */
+  .singUp {
+    left: 65px;
+    display: inline-block;
+  }
+
+  /* line 105, scss/media-queries_IE8.scss */
+  .header-title {
+    margin-top: 190px;
+  }
+
+  /* line 108, scss/media-queries_IE8.scss */
+  .header-title-h1 {
+    width: 282px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  /* line 113, scss/media-queries_IE8.scss */
+  .header-title-h2 {
+    width: 220px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 8px auto 15px;
+  }
+
+  /* line 120, scss/media-queries_IE8.scss */
+  .header-title-btn,
+  .partner-btn,
+  .search-input,
+  .search-btn {
+    width: 280px;
+  }
+
+  /* line 127, scss/media-queries_IE8.scss */
+  .steps,
+  .partner,
+  .tile,
+  .search {
+    padding-top: 33px;
+  }
+
+  /* line 133, scss/media-queries_IE8.scss */
+  .steps-h3,
+  .partner-h3,
+  .tile-h3,
+  .search-h3 {
+    margin-bottom: 15px;
+  }
+
+  /* line 139, scss/media-queries_IE8.scss */
+  .steps-block {
+    width: 300px;
+    height: 240px;
+    margin-bottom: 10px;
+    margin-right: 0;
+    position: relative;
+  }
+
+  /* line 146, scss/media-queries_IE8.scss */
+  .partner-block-item {
+    margin-bottom: 23px;
+  }
+
+  /* line 150, scss/media-queries_IE8.scss */
+  .block2 {
+    background-position: 0 -127px;
+  }
+
+  /* line 153, scss/media-queries_IE8.scss */
+  .block3,
+  .block7 {
+    background-position: 0 -50px;
+  }
+
+  /* line 157, scss/media-queries_IE8.scss */
+  .block4 {
+    background-position: 0 -117px;
+  }
+
+  /* line 160, scss/media-queries_IE8.scss */
+  .block7 {
+    margin-left: 0;
+  }
+
+  /* line 165, scss/media-queries_IE8.scss */
+  .tile-blockS,
+  .tile-blockB {
+    width: 300px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  /* line 171, scss/media-queries_IE8.scss */
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .block5,
+  .block6,
+  .block7 {
+    background-size: cover;
+    background-position: inherit;
+  }
+
+  /* line 183, scss/media-queries_IE8.scss */
+  .search-h3 {
+    margin-bottom: 0;
+  }
+
+  /* line 186, scss/media-queries_IE8.scss */
+  .search-text {
+    margin: 12px 0 15px;
+  }
+
+  /* line 189, scss/media-queries_IE8.scss */
+  .search-input {
+    margin-right: 0;
+  }
+
+  /* line 192, scss/media-queries_IE8.scss */
+  .search-btn {
+    margin-top: 10px;
+  }
+
+  /* line 197, scss/media-queries_IE8.scss */
+  .footer {
+    min-width: 320px;
+    margin-top: 40px;
+    padding-top: 16px;
+    text-align: center;
+    padding: 16px 0;
+  }
+  /* line 203, scss/media-queries_IE8.scss */
+  .footer .wrapper {
+    padding: 0 30px;
+  }
+
+  /* line 207, scss/media-queries_IE8.scss */
+  .footer-column-logo {
+    width: 240px;
+    float: none;
+    margin-right: 0;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  /* line 214, scss/media-queries_IE8.scss */
+  .footer-column {
+    width: 240px;
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+
+  /* line 221, scss/media-queries_IE8.scss */
+  .footer-column-ul-li:first-child {
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* line 225, scss/media-queries_IE8.scss */
+  .footer-column-ul-li {
+    margin-right: 12px;
+    display: inline-block;
+  }
+
+  /* line 229, scss/media-queries_IE8.scss */
+  .footer-column-copyR {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    margin: 10px auto 0;
+  }
+
+  /* line 235, scss/media-queries_IE8.scss */
+  .footer-column-copyR-text {
+    text-align: center;
+  }
+
+  /* line 238, scss/media-queries_IE8.scss */
+  .footer-column-copyR-logo {
+    float: none;
+    display: inline-block;
+  }
+}
+/* END width 320-767 */
