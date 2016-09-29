@@ -94,6 +94,16 @@ function nextLeft() { // переход к предыдущему слайду
 
 
 // search 
+
+window.onkeydown = function(e) {
+	if(e.key == 'Enter') {
+		e.preventDefault();
+		search();
+	}
+}
+
+
+
 function search(){
 
 	var valArr = document.getElementById('serchVal');
@@ -153,9 +163,9 @@ function search(){
 				});
 
 				imagesLoaded( grid ).on( 'progress', function() {
-  // layout Masonry after each image loads
-  msnry.layout();
-});
+  				// layout Masonry after each image loads
+				  msnry.layout();
+				});
 			}
 
 			document.getElementById('search').addEventListener('click', search);

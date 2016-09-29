@@ -122,7 +122,15 @@ function nextLeft(event) { // переход к предыдущему слай�
 
 
 // search 
-
+ document.onkeydown = function(e) {
+ 	var keyCode = event.which || event.keyCode;
+ 			// console.log(event.which);
+ 			// for(var key in event) { console.log(key);}
+ 		if(keyCode == 13) {
+ 			event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+ 			search();
+ 		}
+ }
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function search(){
 	// console.log('OK!!');
