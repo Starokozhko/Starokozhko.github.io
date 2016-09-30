@@ -154,6 +154,9 @@ function search(){
 					}
 				}
 
+					document.getElementById('serchVal').value = '';
+
+
 				// init Isotope
 				var grid = document.querySelector('.grid');
 

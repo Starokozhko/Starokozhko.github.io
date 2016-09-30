@@ -168,7 +168,7 @@ if($searchText){var search = 'q=' + $searchText};
 			}
 
 		});
-
+		document.getElementById('serchVal').value = '';
 // *******END*******
 
 
