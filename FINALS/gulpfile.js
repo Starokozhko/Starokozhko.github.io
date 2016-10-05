@@ -61,13 +61,13 @@ gulp.task('clean', function (cb) {
 
 gulp.task('sprite', function() {
     var spriteData = 
-        gulp.src('src/img/partners/all_img/*.*') // путь, откуда берем картинки для спрайта
+        gulp.src('src/img/partners/all_img/sprite/*.*') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
                 imgName: 'sprite.png',
                 cssName: '_sprite.css',
             }));
 
-    spriteData.img.pipe(gulp.dest('src/img/partners/')); // путь, куда сохраняем картинку
+    spriteData.img.pipe(gulp.dest('src/img/partners')); // путь, куда сохраняем картинку
     spriteData.css.pipe(gulp.dest('src/css/scss/')); // путь, куда сохраняем стили
 });
 // gulp.task('sprite2', function() {

@@ -762,32 +762,69 @@ section:after, footer:after {
   margin: 0 auto;
 }
 
-/* line 2, scss/_sprite.scss */
+/* line 1, scss/_sprite.scss */
 .img1 {
-  background-image: url(../img/partners/sprite.png);
-  background-position: 0px 0px;
-  margin-left: 42px;
+  background: url(../img/partners/foto1.png) no-repeat;
+}
+
+/* line 4, scss/_sprite.scss */
+.img2 {
+  background: url(../img/partners/foto2.png) no-repeat;
 }
 
 /* line 7, scss/_sprite.scss */
-.img2 {
-  background-image: url(../img/partners/sprite.png);
-  background-position: -125px 0px;
-  margin-left: 47px;
-}
-
-/* line 12, scss/_sprite.scss */
 .img3 {
-  background-image: url(../img/partners/sprite.png);
-  background-position: 0px -126px;
-  margin-left: 52px;
+  background: url(../img/partners/foto3.png) no-repeat;
 }
 
-/* line 17, scss/_sprite.scss */
+/* line 10, scss/_sprite.scss */
 .img4 {
+  background: url(../img/partners/foto4.png) no-repeat;
+}
+
+/* line 13, scss/_sprite.scss */
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+/* line 22, scss/_sprite.scss */
+.img1:after {
+  background-position: 0px -120px;
+}
+
+/* line 25, scss/_sprite.scss */
+.img2:after {
+  background-position: -122px -120px;
+}
+
+/* line 28, scss/_sprite.scss */
+.img3:after {
+  background-position: 0px 0px;
+}
+
+/* line 31, scss/_sprite.scss */
+.img4:after {
+  background-position: -123px 0px;
+}
+
+/* line 35, scss/_sprite.scss */
+.img1:after,
+.img2:after,
+.img3:after,
+.img4:after {
+  content: '';
   background-image: url(../img/partners/sprite.png);
-  background-position: -250px 0px;
-  margin-left: 57px;
+  display: block;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 41px;
+  height: 40px;
 }
 
 /* line 248, scss/style_IE8.scss */

@@ -1,21 +1,48 @@
-
 .img1 {
-	background-image: url(../img/partners/sprite.png);
-	background-position: 0px 0px;
-	margin-left: 42px;
+  background: url(../img/partners/foto1.png) no-repeat;
 }
 .img2 {
-	background-image: url(../img/partners/sprite.png);
-	background-position: -125px 0px;
-	margin-left: 47px;
+  background: url(../img/partners/foto2.png) no-repeat;
 }
 .img3 {
-	background-image: url(../img/partners/sprite.png);
-	background-position: 0px -126px;
-	margin-left: 52px;
+  background: url(../img/partners/foto3.png) no-repeat;
 }
 .img4 {
-	background-image: url(../img/partners/sprite.png);
-	background-position: -250px 0px;
-	margin-left: 57px;
+  background: url(../img/partners/foto4.png) no-repeat;
 }
+.img1,
+.img2,
+.img3,
+.img4 {
+ width: 120px;
+ height: 120px;
+ position: relative;
+}
+
+.img1:after  {
+  background-position: 0px -120px;
+}
+.img2:after {
+  background-position: -122px -120px;
+}
+.img3:after {
+  background-position: 0px 0px;
+}
+.img4:after {
+  background-position: -123px 0px;
+
+}
+.img1:after,
+.img2:after,
+.img3:after,
+.img4:after {
+  content: '';
+  background-image: url(../img/partners/sprite.png);
+  display: block;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 41px;
+  height: 40px;
+}
+
