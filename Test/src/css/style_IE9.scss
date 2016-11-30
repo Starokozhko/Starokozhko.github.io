@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@import "stylesheet.scss";
+@import "mixins.scss";
+
+body {
+
+	width: 100%;
+	background: url(../img/body_fon.jpg) repeat;
+
+	.fon {
+		padding-top: 20px;
+		width: 100%;
+		min-width: $wn + px;
+		height: 347px;	
+		background: url(../img/heder_fon.png)   no-repeat;
+		background-size: 100%;
+	}
+}
+.wrapper {
+	width: $wn + px;
+	margin: 0 auto;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.placeholder { color: gray };
+
+
+@import 'header_IE9.scss';
+@import 'content_IE9.scss';
+@import 'bottom-menu_IE9.scss';

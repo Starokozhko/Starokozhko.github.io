@@ -1,0 +1,127 @@
+
+.header {
+	
+	.logo {
+		width: 250px;
+		position: relative;
+		margin: 0 0 0 26px;
+		float: left;
+		& img {
+			position: absolute;
+		}
+		& p {
+			position: absolute;
+			top: 12px;
+			left: 28px;
+			@include ffKMP(34px);
+			text-transform: uppercase;
+			font-weight: 100;
+			color: #231f20;
+		}
+		& span {
+			position: absolute;
+			top: 42px;
+			left: 31px;
+			@include ffMPS(15px);
+			font-variant: small-caps;
+			color: #858689;
+			letter-spacing: 1.1px;
+		}
+	}
+	.call {
+		float: right;
+		position: relative;
+		width: 200px;
+		& span {
+			position: absolute;
+			color: #585755;
+			@include ffMPR(11px);
+			top: -4px;
+			letter-spacing: 0.4px;
+			right: 0px;
+		}
+	}
+	& p {
+		position: absolute;
+		color: #373737;
+		@include ffMPR(20px);
+		letter-spacing: -0.1px;
+		right: 0;
+		top: 8px;
+	}
+}
+.topNav {
+	float: right;
+	margin-top: 47px;
+	margin-bottom: 25px;
+	width: 320px;
+
+
+		& a {
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $colorG;
+			@include ffZR(12px);
+			font-variant: small-caps;
+			font-stretch: ultra-condensed;
+			font-weight: 600;
+			word-spacing: 0.1px;
+			margin: 0 0 0 0.9%;
+		}
+		& a:hover {
+			text-decoration: underline;
+		}
+		
+	}
+	nav {
+		clear: both;
+		width: 940px;
+		height: 39px;
+		margin-bottom: 13px;
+		border: 1px solid $colorGD;
+		border-radius: 5px;
+		background: $colorGD; // $colorGY
+		box-shadow: inset 1px 1px 1px #81de41;
+		padding: 0 24px;
+		& a {
+			text-decoration: none;
+			line-height: 43px;
+			@include ffZBC(15px);
+			color: $colorW;
+			font-stretch: ultra-condensed;
+			font-weight: 600;
+			text-shadow: 0 -2px 2px #2a8b24;
+			letter-spacing: -0.2px;
+		}
+		& a:hover {
+			color: #ccc;
+		}
+		& a:nth-child(2){
+			margin: 0 4.7% 0 0;
+			letter-spacing: 0.2px;
+		}
+		& a:nth-child(4) {
+			margin: 0 1% 0 4.8%;
+			letter-spacing: 0.05px;
+		}
+		& a:nth-child(5) {
+			margin: 0 1% 0 4.5%;
+			letter-spacing: 0.05px;
+		}
+		& a:nth-child(6) {
+			margin: 0 1% 0 4.5%;
+			letter-spacing: 0.05px;
+		}
+		& a:nth-child(7) {
+			margin: 0 1% 0 4%;
+			letter-spacing: 0.2px;
+		}
+		& a:nth-child(8) {
+			margin: 0 1% 0 3.8%;
+			letter-spacing: 0.05px;
+		}
+		
+		.nav {
+			display: none;
+		}
+	}

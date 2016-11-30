@@ -1,0 +1,43 @@
+$colorW: #ffffff;
+$colorG: #209a28;
+$colorGD: #0c932f;
+$colorGY: #66c13e;
+$colorDGr: #3a3731;
+$colorGr: #757268;
+$colorBr: #64522a;
+
+$wn: 989;
+$wt: 480;
+$wm: 320;
+
+@mixin ffZR ( $size ) {
+	font-family: 'ZurichBT-RomanCondensed', sans-serif;
+	font-size: $size;
+}
+@mixin ffZBC ( $size ) {
+	font-family: 'zurich_bold_Condensed', sans-serif;
+	font-size: $size;
+}
+
+@mixin ffKMP ( $size ) {
+	font-family: 'KlavikaMedium-Plain', sans-serif;
+	font-size: $size;
+}
+
+@mixin ffMPS ( $size ) {
+	font-family: 'MyriadPro-Semibold', sans-serif;
+	font-size: $size;
+}
+@mixin ffMPR ( $size ) {
+	font-family: 'Myriad Pro-Regular', sans-serif;
+	font-size: $size;
+}
+@mixin ffA ( $size ) {
+	font-family: 'Arial', sans-serif;
+	font-size: $size;
+}
+@mixin ffAb ( $size:null ) {
+	font-family: 'Arial', sans-serif;
+	font-weight: 600;
+	font-size: $size;
+}

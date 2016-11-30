@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Yuriy Starokozhko">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+
+	<!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=9+">
+  <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('aside');
+      document.createElement('article');
+      document.createElement('footer');
+  </script>
+<script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js"></script>
+	
+  <link rel="stylesheet" href="css/style_IE9.css">
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <script src="js/respond.min.js"></script>
+	<script src="js/script_IE9.js"></script>
+	<![endif]-->
+	<!--[if !IE]><!-->
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script> 
+	<link rel="stylesheet" href="css/style.css">
+	<link  rel="stylesheet" type="text/css" href="css/media-queries.css">
+	<script src="js/script.js"></script>
+
+	<!--<![endif]-->
+
+
+	<script src="js/tmpl.js"></script> 
+
+
+
+
+</head>
+<body>
+	<div class="fon">
+		<div class="wrapper">
+			<header class="header clearfix">
+			<!-- логотип -->
+				<div class="logo">
+					<img src="img/logo_el.png" height="65" width="56" alt="logo">
+					<p>naturetour</p>
+					<span>spend holidays with nature</span>
+				</div>
+				<!-- позвоните нам -->
+				<div class="call">
+					<span>For Friendly, Expert advice call</span>
+					<p>12 (0) 1234 567890</p>
+				</div>
+				<!-- верхнее меню -->
+				<div class="topNav">
+					<a href="#">home</a>
+					<a href="#">how to book</a>
+					<a href="#">faqs</a>
+					<a href="#">visit us</a>
+					<a href="#">contact us</a>
+				</div>
+				<!-- основное меню -->
+				<nav>
+					<div class="nav"></div>
+					<a href="#">DESTINATIONS</a>
+					<a href="#">SPECIES</a>
+					<a href="#">TOUR TYPES</a>
+					<a href="#">TOUR LEADERS</a>
+					<a href="#">LATE AVAILABILITY</a>
+					<a href="#">LATEST NEWS</a>
+					<a href="#">ABOUT US</a>
+				</nav>
+			</header>
+		</div>
+
+		<div class="wrapper clearfix">
+			<h5 class="content-title">Home</h5>
+			<!-- контент -->
+			<div class="content-wrap">
+			<!-- левый блок контента -->
+				<div class="content">
+					<!-- слайдер -->
+					<section class="slider">
+						<article>
+							<div class="slider-wrap">
+								<div class="slids">
+									<!-- блок заполняеться в JS  -->
+									<div class="slids-panel">
+
+										<h3 class="visible" id="firsfText"></h3>
+										<h1 class="visible" id="secondText"></h1>
+										<p class="visible" id="paragrafer"></p>
+										<a class="visible" id="slideLink" href="#"></a>
+										
+										<div class="slids-panel-control clearfix" >
+											<input type="radio" name="sliders" id="check1"><label for="check1">1</label>
+											<input type="radio" name="sliders" id="check2"><label for="check2">2</label>
+											<input type="radio" name="sliders" id="check3"><label for="check3">3</label>
+											<input type="radio" name="sliders" id="check4"><label for="check4">4</label>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</article>
+					</section>
+
+
+					<!-- текстовый блок под слайдером -->
+					<article class="textBlock clearfix">
+						<div class="textBlock-img"></div>
+						<h2>Naturetour&nbsp;Wild life Holidays</h2>
+						<p>A selection of worldwide bird watching, wild flower and natural history holidays (including wildlife tours, treks and cruises), all led by expert <a href="#">naturalist guides.</a></p>
+
+					</article>
+					<!-- блок управления показов матерала -->
+					<article class="sortBar clearfix">
+						<ul>
+							<li class="sortBar-active" id="sortBar_one"><h2>By Destination</h2></li>
+							<li class="sortBar-noActive" id="sortBar_tow"><h2>By Species</h2></li>
+							<li class="sortBar-noActive" id="sortBar_thre"><h2>By Tour Type</h2></li>
+						</ul>
+					</article>
+
+					<!-- вывод материалов на основании выбранного или поумолчанию -->
+					<main class="materials">
+					</main>
+
+				</div>
+
+				<!-- сайтбар правая часть контента -->
+				<aside class="sidebar">
+					<!-- внесение и отправка данных о запросе по параметрам -->
+					<article class="sidebar-items">
+						<h2 class="sidebar-items-title">Holiday Search</h2>
+						<p class='quickSearch-text'>Start your holiday search here:</p>
+						<!-- форма отправки с выбранными параметрами -->
+						<form action="#" method="post" id="searchHol">
+
+							<div class="selects">
+								<input type="text"  class="selectRegion input" id="selectRegionInput" form="searchHol" value="Select Region" placeholder="Select Region">
+								<label for="selectRegionInput" class="inputArrow"></label>
+								<div  class="transparent" id="selectRegion">
+								</div>
+							</div>
+
+							<div class="selects">
+								<input type="text"  class="selectCategory input" disabled="disabled" id="selectCategorysInput" form="searchHol" value="Select Category">
+								<label for="selectCategorysInput" class="inputArrow"></label>
+								<div  class="transparent" id="selectCategory"></div>
+							</div>
+
+							<div class="selects">
+								<input type="text" class="selectDate input" disabled="disabled" id="selectDatesInput" form="searchHol" value="Select Date">
+								<label for="selectDatesInput" class="inputArrow"></label>
+								<div  class="transparent" id="selectDate"></div>
+							</div>
+
+							<div class="selects">
+								<input type="text"  class="selectPrice input" disabled="disabled" id="selectPricesInput" form="searchHol" value="Select Price">
+								<label for="selectPricesInput" class="inputArrow"></label>
+								<div  class="transparent" id="selectPrice"></div>
+							</div>
+
+							<div class="searchButtonWrap">
+								<input type="submit" id="serchButton" class="serchButton" value=''>
+								<label for="serchButton" id='serchLabel'>SEARCH HOLIDAYS</label>
+								<label  id='serchArrow'></label>
+							</div>
+						</form>
+						<!-- быстрый поиск -->
+						<h2 class="quickSearch-titel">Quick Search</h2>
+						<p class='quickSearch-text'>Enter a country or tour code:</p>
+						<form action="#" method="post" class="quickSearch">
+							<input type="search" class="quickSearch-input input" placeholder="Country/Code ...">
+							<input type="button" class="quickSearch-button greenGrad" value="SEARCH">
+						</form>
+					</article>
+
+					<!-- блок подписки -->
+					<article class="sidebar-items">
+						<h2 class="sidebar-items-title newsletter">Newsletter Signup</h2>
+						<p class="newsletter-text quickSearch-text">New tours, special offers, extra departures and latest news</p>
+						<form action="#" method="post" class="subscription singUp">
+							<input type="email" class="subscription-email input" placeholder="Enter Email ...">
+							<input type="text" class="subscription-name input" placeholder="Enter Name ...">
+							<input type="button" class="subscription-button greenGrad" value="SIGN UP">
+						</form>
+					</article>
+
+					<!-- блоки с новостями -->
+					<article class="sidebar-items">
+						<h2 class="sidebar-items-title">Latest News</h2>
+						<div class="news">
+							<h3>Watch Brown Bears in Sweden</h3>
+							<h3>11/05/2010</h3>
+							<p class="news-text">Experience the forest at night and watch Brown Bears – join one of our short breaks i...</p>
+						</div>
+
+						<div class="news">
+							<h3>Watch Brown Bears in Sweden</h3>
+							<h3>11/05/2010</h3>
+							<p class="news-text">Experience the forest at night and watch Brown Bears – join one of our short breaks i...</p>
+						</div>
+
+						<div class="news">
+							<h3>Watch Brown Bears in Sweden</h3>
+							<h3>11/05/2010</h3>
+							<p class="news-text">Experience the forest at night and watch Brown Bears – join one of our short breaks i...</p>
+						</div>
+
+					</article>
+				</aside>
+			</div>
+		</div>
+
+		<!-- подвал сайта-->
+		<div class="wrapper">
+			<div class="bottom-menu">
+
+				<!-- заголовок подвала -->
+				<div class="bottom-menu-title">
+					<h1>Naturetour has 25 years experience in operating wildlife holidays.  Contact Us for friendly traval advice</h1>
+				</div>
+
+				<!-- ссылки на соц сети, материалы плюс контактные данные -->
+				<ul class="bottom-menu-list">
+					<li class="bottom-menu-list-first">
+
+						<!-- ссылки на соц сети -->
+						<div class="bootom-menu-list-title clearfix">
+							<h3>Follow us on twitter</h3>
+							<img src="img/twitter.jpg" alt="twitter" class="bottom-menu-img">
+						</div>
+						<p class="bootom-menu-list-text">&nbsp;* 4 days ago The new website is now live. We hope you enjoy it and any feedback is welcome.</p>
+						<div  class="bottom-menu-list-button"></div>
+					</li>
+
+					<!-- ссылки на материалы -->
+					<li class="bottom-menu-list-second">
+						<h3>Quick Links</h3>
+						<ul class="bottom-menu-list-link">
+							<li><a href="#">Holidays by destination</a></li>
+							<li><a href="#">Holidays by species</a></li>
+							<li><a href="#">Holidays by tour type</a></li>
+							<li><a href="#">Late availability</a></li>
+							<li><a href="#">Tour leaders</a></li>
+
+							<li><a href="#">How to book</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Visit Us</a></li>
+							<li><a href="#">Terms & conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+
+							<li><a href="#">Latest news</a></li>
+							<li><a href="#">Request a brochure</a></li>
+							<li><a href="#">Subscribe to newsletter</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</li>
+
+					<!-- контактные данные -->
+					<li class="bottom-menu-list-last">
+						<h3>CONTACT US</h3>
+						<ul class="bottom-menu-list-contact">
+							<li><span>Tel:</span> 12345 67890</li>
+							<li><span>Email:</span> info@naturetour.com</li>
+							<li>Naturetour, Your City,</li>
+							<li>Your state, 123 456 789</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<footer>
+				<h6>© Naturetour 2010.</h6>
+				<p>No portion of this website may be reproduced without the prior written consent of Naturetour. All rights reserved.</p>
+			</footer>
+		</div>
+
+	</div>
+
+		<!-- шаблон для вывода материалов на основании активного таба -->
+		<script type="text/html" id="templite2">
+
+			<% if( data[0].titleText ) { %>
+
+				<% for(var i = 0; i < data.length; i++) { %>
+					<div class="item">
+						<img src="img/item/<%= data[i].imgUrl %>" class="item-img" alt="<%= data[i].titleText %>">
+						<h4><%= data[i].titleText %></h4>
+						<p><%= data[i].text %></p>
+					</div>
+
+					<% } %>
+					<% } %>
+
+				</script>
+
+
+			</body>
+			</html>
