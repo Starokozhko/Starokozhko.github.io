@@ -1,2 +1,2 @@
 # Starokozhko.github.io
-Stady
+

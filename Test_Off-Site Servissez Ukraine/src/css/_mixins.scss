@@ -1,0 +1,27 @@
+$colorW: #ffffff;
+$colorG: #ada6a0;
+// $colorBlD: #020947;
+
+
+$wL: 90%; //928px
+
+
+@mixin ffR ( $size, $color ) {
+	font-family: "Rockwell Regular", Arial, Helvetica, sans-serif;
+	font-size: $size;
+	color: $color;
+}
+@mixin ffA ( $size, $color ) {
+	font-family:  Arial, "Rockwell Regular", Helvetica, sans-serif;
+	font-size: $size;
+	color: $color;
+}
+
+@mixin flex ( ) {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+}
+

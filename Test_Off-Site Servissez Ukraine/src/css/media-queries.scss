@@ -1,0 +1,88 @@
+@import "mixins.scss";
+
+
+@media only screen and (min-width : 747px) and (max-width : 994px){ 
+
+	.content-item:last-child {
+		margin: 10px auto 10px;
+	}
+
+	.footer .footer-list {
+		width: 80%;
+	}
+
+} // END min-width 747px max-width 994px 
+
+@media only screen and (max-width : 750px) {
+
+	.header	.nav {
+		height: 100px;
+		@include flex;
+		flex-wrap: wrap;
+
+		.top-nav-list {
+			float: none;
+			width: 100%;
+		}
+		.search {
+			float: none;
+			width: inherit;
+
+			.search-input {
+				width: inherit;
+				box-sizing: border-box;
+				height: 32px;
+			}
+		}
+	}
+	.header .nav .top-nav-list .top-nav-list-item .top-nav-link {
+		font-size: 130%;
+	}
+
+}// END max-width 750px
+
+@media only screen and (max-width : 550px) {
+
+	.footer .footer-list {
+		width: 100%;
+	}
+
+} // END max-width 550px
+
+@media only screen and (max-width : 497px) {
+
+	.greeting {
+		flex-wrap: wrap;
+
+		.greeting-picture {
+			margin: 0 auto;
+		}
+		.greeting-text {
+			flex: 0 1 95%;
+			margin: 10px auto;
+
+			.greeting-text-title {
+				text-align: center;
+			}
+		}
+
+	}
+	.wrapper {
+		min-width: 320px;
+	}
+
+	.content {
+		justify-content: center;
+
+	}
+
+	.footer {
+		height: auto;
+
+		.footer-list {
+			flex-wrap: wrap;
+		}
+	}
+
+} // END max-width 497px
+

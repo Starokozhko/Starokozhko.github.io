@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OSS Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"/>
+    <style>
+        label {
+            width: 100px;
+        }
+        label.error {
+            color: red;
+        }
+        input {
+            border : 1px solid #ccc;
+        }
+        input.error {
+            border-color: red;
+        }
+        .content {
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        .errorFirstName,
+        .errorLastName,
+        .errorEmail,
+        .error {
+            display: none;
+            color: red;
+            margin-left: 105px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="content">
+                    <form onsubmit="return myForm(this)" id="testForm">
+                        <div>
+                            <label for="firstName">First name</label>
+                            <input type="text" id="firstName"/>
+                        </div>
+
+                        <div>
+                            <label for="lastName">Last name</label>
+                            <input type="text" id="lastName"/>
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email"/>
+                        </div>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myForm () {
+            var firstName = document.getElementById("firstName"),
+            lastName = document.getElementById("lastName"),
+            email = document.getElementById("email"),
+            regexp = /^['a-zA-ZА-Яа-я']{2,15}/,
+            regexpEmail = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+
+            function createMessage(value) {
+             var errorEl = document.createElement('span');
+
+             switch(value) {
+               case firstName:    errorEl.innerHTML = 'Enter your First Name';
+               errorEl.className = 'errorFirstName';
+               break;
+               case lastName:     errorEl.innerHTML = 'Enter your Last Name';
+               errorEl.className = 'errorLastName';
+               break;
+               case email:        errorEl.innerHTML = 'Please enter your E-mail';
+               errorEl.className = 'errorEmail';
+               break;
+               default:   errorEl.innerHTML = 'Error';
+               errorEl.className = 'error';
+           }
+           return errorEl;
+       }
+
+
+
+       if ( regexp.test(firstName.value) && regexp.test(lastName.value) && regexpEmail.test(email.value) ) {
+            alert('Ok'); 
+            return true;
+        } else {
+
+        if ( !regexp.test(firstName.value) ) {
+
+            firstName.parentElement.append(createMessage(firstName)); 
+
+                document.getElementsByClassName('errorFirstName')[0].style.display = 'block';
+
+            } else if( document.getElementsByClassName('errorFirstName')[0] ) document.getElementsByClassName('errorFirstName')[0].style.display = 'none';
+            
+
+            if ( !regexp.test(lastName.value) ) {
+
+                lastName.parentElement.append(createMessage(lastName));
+
+                document.getElementsByClassName('errorLastName')[0].style.display = 'block';
+
+            } else if( document.getElementsByClassName('errorLastName')[0] ) document.getElementsByClassName('errorLastName')[0].style.display = 'none';
+
+
+            if( email.value == '' ){
+
+                email.parentElement.append(createMessage(email)); 
+
+                document.getElementsByClassName('errorEmail')[0].style.display = 'block';
+
+            } else if ( !regexpEmail.test(email.value) ) {
+
+                if( document.getElementsByClassName('errorEmail') ) {
+
+                    document.getElementsByClassName('errorEmail')[0].innerHTML = 'Please enter a valid e-mail';
+
+                } else {
+
+                    email.parentElement.append(createMessage(email)); 
+
+                    document.getElementsByClassName('errorEmail')[0].style.display = 'block';
+                }
+            } else if( document.getElementsByClassName('errorEmail')[0] ) document.getElementsByClassName('errorEmail')[0].style.display = 'none';
+
+            return false;
+        }
+        return false;
+    }
+</script>
+
+</body>
+</html>
